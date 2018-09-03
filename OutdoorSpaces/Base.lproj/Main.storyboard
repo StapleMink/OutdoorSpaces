@@ -35,7 +35,7 @@
             </objects>
             <point key="canvasLocation" x="2201" y="-591"/>
         </scene>
-        <!--View Controller-->
+        <!--Favorites-->
         <scene sceneID="iOE-LJ-Qw6">
             <objects>
                 <viewController id="q3H-00-Mc9" sceneMemberID="viewController">
@@ -45,7 +45,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="EFN-ar-PBC"/>
                     </view>
-                    <navigationItem key="navigationItem" id="fcs-yf-Wtt"/>
+                    <navigationItem key="navigationItem" title="Favorites" id="fcs-yf-Wtt"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n3O-Y4-aXs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
