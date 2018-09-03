@@ -35,7 +35,7 @@
             </objects>
             <point key="canvasLocation" x="2201" y="-591"/>
         </scene>
-        <!--View Controller-->
+        <!--Favourites-->
         <scene sceneID="iOE-LJ-Qw6">
             <objects>
                 <viewController id="q3H-00-Mc9" sceneMemberID="viewController">
@@ -45,7 +45,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="EFN-ar-PBC"/>
                     </view>
-                    <navigationItem key="navigationItem" id="fcs-yf-Wtt"/>
+                    <navigationItem key="navigationItem" title="Favourites" id="fcs-yf-Wtt"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n3O-Y4-aXs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -67,7 +67,7 @@
             </objects>
             <point key="canvasLocation" x="2200.8000000000002" y="920.68965517241384"/>
         </scene>
-        <!--View Controller-->
+        <!--Settings-->
         <scene sceneID="qwa-Yh-Hhb">
             <objects>
                 <viewController id="Cai-2t-bwd" sceneMemberID="viewController">
@@ -77,7 +77,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="gpF-SC-Rcv"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Zgm-v2-P4W"/>
+                    <navigationItem key="navigationItem" title="Settings" id="Zgm-v2-P4W"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FIC-yv-5US" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
