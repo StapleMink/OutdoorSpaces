@@ -51,7 +51,7 @@
             </objects>
             <point key="canvasLocation" x="2200.8000000000002" y="170.46476761619192"/>
         </scene>
-        <!--View Controller-->
+        <!--My Profile-->
         <scene sceneID="Uj5-ZW-z1h">
             <objects>
                 <viewController id="H6b-9C-n8m" sceneMemberID="viewController">
@@ -61,7 +61,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="x4z-In-qJ7"/>
                     </view>
-                    <navigationItem key="navigationItem" id="SRJ-dv-HzK"/>
+                    <navigationItem key="navigationItem" title="My Profile" id="SRJ-dv-HzK"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KFE-0J-50o" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
