@@ -13,6 +13,8 @@
 		A00E30F3213392EE00FAECE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A00E30F2213392EE00FAECE3 /* Assets.xcassets */; };
 		A00E30F6213392EE00FAECE3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A00E30F4213392EE00FAECE3 /* LaunchScreen.storyboard */; };
 		A00E3101213392EF00FAECE3 /* OutdoorSpacesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00E3100213392EF00FAECE3 /* OutdoorSpacesTests.swift */; };
+		A02107DA21484447009ECBAC /* LocationDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02107D921484447009ECBAC /* LocationDetailViewController.swift */; };
+		A02107DC214C617B009ECBAC /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02107DB214C617B009ECBAC /* MapViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		A00E30FC213392EF00FAECE3 /* OutdoorSpacesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OutdoorSpacesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A00E3100213392EF00FAECE3 /* OutdoorSpacesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutdoorSpacesTests.swift; sourceTree = "<group>"; };
 		A00E3102213392EF00FAECE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A02107D921484447009ECBAC /* LocationDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetailViewController.swift; sourceTree = "<group>"; };
+		A02107DB214C617B009ECBAC /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +83,8 @@
 			children = (
 				A00E30EB213392E900FAECE3 /* AppDelegate.swift */,
 				A00E30ED213392E900FAECE3 /* ViewController.swift */,
+				A02107D921484447009ECBAC /* LocationDetailViewController.swift */,
+				A02107DB214C617B009ECBAC /* MapViewController.swift */,
 				A00E30EF213392EA00FAECE3 /* Main.storyboard */,
 				A00E30F2213392EE00FAECE3 /* Assets.xcassets */,
 				A00E30F4213392EE00FAECE3 /* LaunchScreen.storyboard */,
@@ -198,7 +204,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A00E30EE213392E900FAECE3 /* ViewController.swift in Sources */,
+				A02107DA21484447009ECBAC /* LocationDetailViewController.swift in Sources */,
 				A00E30EC213392E900FAECE3 /* AppDelegate.swift in Sources */,
+				A02107DC214C617B009ECBAC /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
