@@ -7,15 +7,25 @@
 //
 
 import UIKit
+import MapKit
 
-class MapViewController: UIViewController {
+class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
+    
+    //MARK: Properties
+    @IBOutlet weak var mapView: MKMapView!
+    var manager: CLLocationManager?
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
-        
         self.navigationController?.navigationBar.barStyle = UIBarStyle.default
+        
+        manager = CLLocationManager()
+        manager!.delegate = self
+        mapView!.delegate = self
+        manager!.requestLocation()
     }
 
     override func didReceiveMemoryWarning() {
@@ -47,5 +57,24 @@ class MapViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    //MARK: Map Implementation
+    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
+        print("error:: \(error.localizedDescription)")
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
+        if status == .authorizedWhenInUse || status == .authorizedAlways{
+            manager.requestLocation()
+        }
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        
+        if locations.first != nil {
+            print("location:: (location)")
+        }
+        
+    }
 
 }
