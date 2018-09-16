@@ -16,6 +16,7 @@
 		A02107DA21484447009ECBAC /* LocationDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02107D921484447009ECBAC /* LocationDetailViewController.swift */; };
 		A02107DC214C617B009ECBAC /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02107DB214C617B009ECBAC /* MapViewController.swift */; };
 		DC5B2EBB214DFFBB0049D298 /* ParkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5B2EBA214DFFBB0049D298 /* ParkTableViewCell.swift */; };
+		DC5B2EBD214E21E70049D298 /* Park.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5B2EBC214E21E70049D298 /* Park.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		A02107D921484447009ECBAC /* LocationDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetailViewController.swift; sourceTree = "<group>"; };
 		A02107DB214C617B009ECBAC /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		DC5B2EBA214DFFBB0049D298 /* ParkTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkTableViewCell.swift; sourceTree = "<group>"; };
+		DC5B2EBC214E21E70049D298 /* Park.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Park.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 				A02107D921484447009ECBAC /* LocationDetailViewController.swift */,
 				A02107DB214C617B009ECBAC /* MapViewController.swift */,
 				DC5B2EBA214DFFBB0049D298 /* ParkTableViewCell.swift */,
+				DC5B2EBC214E21E70049D298 /* Park.swift */,
 				A00E30EF213392EA00FAECE3 /* Main.storyboard */,
 				A00E30F2213392EE00FAECE3 /* Assets.xcassets */,
 				A00E30F4213392EE00FAECE3 /* LaunchScreen.storyboard */,
@@ -207,6 +210,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A00E30EE213392E900FAECE3 /* ViewController.swift in Sources */,
+				DC5B2EBD214E21E70049D298 /* Park.swift in Sources */,
 				A02107DA21484447009ECBAC /* LocationDetailViewController.swift in Sources */,
 				DC5B2EBB214DFFBB0049D298 /* ParkTableViewCell.swift in Sources */,
 				A00E30EC213392E900FAECE3 /* AppDelegate.swift in Sources */,

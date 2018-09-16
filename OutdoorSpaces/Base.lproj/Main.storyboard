@@ -58,6 +58,7 @@
                     <navigationItem key="navigationItem" title="Near Me" id="8oa-gb-FKD"/>
                     <connections>
                         <outlet property="searchbar" destination="aur-Oz-KTJ" id="zTj-Xp-jjx"/>
+                        <outlet property="tableView" destination="Zkp-57-AG8" id="JkM-Gc-p8Z"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

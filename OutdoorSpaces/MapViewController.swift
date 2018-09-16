@@ -8,9 +8,15 @@
 
 import UIKit
 
-class MapViewController: UIViewController {
+class MapViewController: UIViewController, UISearchBarDelegate, UITableViewDataSource {
 
+    //search bar stuff
     @IBOutlet weak var searchbar: UISearchBar!
+   // let searchController = UISearchController(searchResultsController: nil)
+    
+    @IBOutlet weak var tableView: UITableView!
+    
+    var parkResults = [Park]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,6 +24,19 @@ class MapViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         self.navigationController?.navigationBar.barStyle = UIBarStyle.default
+        
+        // set up search bar
+        searchbar.delegate = self
+        // Setup the Search Controller
+        /*
+        searchController.searchResultsUpdater = self
+        searchController.obscuresBackgroundDuringPresentation = false
+        searchController.searchBar.placeholder = "Search Parks"
+        navigationItem.searchController = searchController
+        definesPresentationContext = true */
+        
+        // set up table view
+        tableView.dataSource = self
     }
 
     override func didReceiveMemoryWarning() {
@@ -39,6 +58,37 @@ class MapViewController: UIViewController {
         self.navigationController?.navigationBar.shadowImage = nil
         self.navigationController?.navigationBar.isTranslucent = true
     }
+    
+    // MARK: UISearchBarDelegate
+    
+    //called whenever search button is clicked
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        //search database for the park using contents of search bar
+        
+        // update table view with results
+        
+        //testing:
+        print("search bar clicked!")
+        print("text is " + searchbar.text!)
+    }
+    
+    
+    //MARK: UITableViewDataSource
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        //number of parks
+        return parkResults.count;
+    }
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        
+        // Configure the cell...
+        
+        return cell
+    }
+    
 
     /*
     // MARK: - Navigation
