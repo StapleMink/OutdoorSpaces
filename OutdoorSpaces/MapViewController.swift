@@ -12,7 +12,6 @@ class MapViewController: UIViewController {
 
     @IBOutlet weak var searchbar: UISearchBar!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
