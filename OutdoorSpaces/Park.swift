@@ -30,7 +30,7 @@ class Park {
     var swimmingPool: Bool
     
     // playground
-    var sandboxNum: Int
+    var sandbox: Bool
     var tanbark: Bool
     var rubber: Bool
     var swingsNum: Int
@@ -41,9 +41,11 @@ class Park {
     var bbq: Bool
     var pavedPathways: Bool
     var lighted: Bool
+    
+    ///__________________________________rating: safety, cleanliness, amenities, overall
 
     // initializer with everything
-    init(name: String, photo: UIImage?, restrooms: Bool, dogFriendly: Bool, tennisCourtNum: Int, basketballCourtNum: Int, soccerFieldNum: Int, pickleballNum: Int, volleyballCourtNum: Int, track: Bool, footballFieldNum: Int, baseballFieldNum: Int, swimmingPool: Bool, sandboxNum: Int, tanbark: Bool, rubber: Bool, swingsNum: Int, seesawNum: Int, seatingArea: Bool, bbq: Bool, pavedPathways: Bool, lighted: Bool)
+    init(name: String, photo: UIImage?, restrooms: Bool, dogFriendly: Bool, tennisCourtNum: Int, basketballCourtNum: Int, soccerFieldNum: Int, pickleballNum: Int, volleyballCourtNum: Int, track: Bool, footballFieldNum: Int, baseballFieldNum: Int, swimmingPool: Bool, sandbox: Bool, tanbark: Bool, rubber: Bool, swingsNum: Int, seesawNum: Int, seatingArea: Bool, bbq: Bool, pavedPathways: Bool, lighted: Bool)
     {
         self.name = name
         self.photo = photo
@@ -62,7 +64,7 @@ class Park {
         self.swimmingPool = swimmingPool
         
         // playground stuff
-        self.sandboxNum = sandboxNum
+        self.sandbox = sandbox
         self.tanbark = tanbark
         self.rubber = rubber
         self.swingsNum = swingsNum
@@ -95,7 +97,7 @@ class Park {
         self.swimmingPool = swimmingPool
         
         // playground stuff
-        self.sandboxNum = 0
+        self.sandbox = false
         self.tanbark = false
         self.rubber = false
         self.swingsNum = 0
@@ -109,7 +111,7 @@ class Park {
     }
     
     // initializer with only playground stuff
-    init(name: String, photo: UIImage?, restrooms: Bool, dogFriendly: Bool, sandboxNum: Int, tanbark: Bool, rubber: Bool, swingsNum: Int, seesawNum: Int)
+    init(name: String, photo: UIImage?, restrooms: Bool, dogFriendly: Bool, sandbox: Bool, tanbark: Bool, rubber: Bool, swingsNum: Int, seesawNum: Int)
     {
         self.name = name
         self.photo = photo
@@ -117,7 +119,7 @@ class Park {
         self.dogFriendly = dogFriendly
         
         // playground stuff
-        self.sandboxNum = sandboxNum
+        self.sandbox = sandbox
         self.tanbark = tanbark
         self.rubber = rubber
         self.swingsNum = swingsNum
