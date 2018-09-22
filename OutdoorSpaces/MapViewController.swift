@@ -1,6 +1,8 @@
 //
 //  MapViewController.swift
 //  OutdoorSpaces
+
+// todo: set up json file with map, do table stuff, organize into extensions
 //
 //  Created by Daniel Budziwojski on 9/14/18.
 //  Copyright © 2018 Sandbox Apps. All rights reserved.
@@ -20,10 +22,13 @@ class MapViewController: UIViewController, UISearchBarDelegate, UITableViewDataS
     // info for the table view
     var parkResults = [Park]()
     
+    // info for the pins
+    var parkAnnotations: [ParkAnnotation] = []
+    
     // mapview stuff
     @IBOutlet weak var mapView: MKMapView!
     //radius of region displayed by map
-    let regionRadius: CLLocationDistance = 1000 // about half a mile
+    let regionRadius: CLLocationDistance = 2000 // about half a mile
     
     
     override func viewDidLoad() {
@@ -46,7 +51,7 @@ class MapViewController: UIViewController, UISearchBarDelegate, UITableViewDataS
         // set up table view
         tableView.dataSource = self
         
-        // set up map
+        // set up delegates
         mapView.delegate = self
         
         //set beginning coordinate and region- later change to user's current location
@@ -54,8 +59,12 @@ class MapViewController: UIViewController, UISearchBarDelegate, UITableViewDataS
         centerMapOnLocatwion(location: initialLocation)
         
         // testing: show one pin on the map
-        let montavistapark = ParkAnnotation(title: "Monta Vista Park", coordinate: CLLocationCoordinate2D(latitude: 37.3184, longitude: -122.0699))
-        mapView.addAnnotation(montavistapark)
+    /*    let montavistapark = ParkAnnotation(title: "Monta Vista Park", coordinate: CLLocationCoordinate2D(latitude: 37.3184, longitude: -122.0699))
+        mapView.addAnnotation(montavistapark)*/
+        
+        // plot all parks in json file
+        loadInitialData()
+        mapView.addAnnotations(parkAnnotations)
         
        // print("finished with viewDidLoad in MapViewController")
     }
@@ -122,6 +131,37 @@ class MapViewController: UIViewController, UISearchBarDelegate, UITableViewDataS
         mapView.setRegion(coordinateRegion, animated: true)
     }
     
+    
+    // get the data from the json file with the parks
+    func loadInitialData(){
+        
+        //read info from json file
+        guard let fileName = Bundle.main.path(forResource: "PublicParks", ofType: "json")
+            else {
+                return
+        }
+        let optionalData = try? Data(contentsOf: URL(fileURLWithPath: fileName))
+        
+        guard
+            let data = optionalData,
+            //use JSONSerialization to obtain a JSON object
+            let json = try? JSONSerialization.jsonObject(with: data),
+            //check that JSON object is a dictionary with String keys and Any values
+            let dictionary = json as? [String: Any],
+            let parksInFile = dictionary["data"] as? [[Any]]
+            else{
+                return
+        }
+        
+        // put info into the artworks array
+        let validParksInFile = parksInFile.compactMap{
+            ParkAnnotation(json: $0)
+        }
+        parkAnnotations.append(contentsOf: validParksInFile)
+        print("loadInitialData completed, parkAnnotations array is \(parkAnnotations)")
+        print("coordinate of \(parkAnnotations[0].title) is \(parkAnnotations[0].coordinate)")
+    }
+
 
     /*
     // MARK: - Navigation
@@ -135,6 +175,9 @@ class MapViewController: UIViewController, UISearchBarDelegate, UITableViewDataS
 
 }
 
+
+
+// use to handle map view delegate methods
 extension MapViewController: MKMapViewDelegate {
 
     // gets called for every annotation you add to the map (like tableView (_:cellForRowAt:) for table views, returns the view for each annotation

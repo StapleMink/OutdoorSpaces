@@ -34,6 +34,23 @@ class ParkAnnotation: NSObject, MKAnnotation {
         print("Inside init in ParkAnnotation")
     }
     
+    
+    
+    // initializer to initialize Park Annotation objects from the json file
+    // initializer to get info from the json file
+    init?(json: [Any]){
+        // get the info using the indicies of the arrays where the stuff is in the json file
+        self.title = json[10] as? String ?? "No Title"
+        
+        // get latitude and longitude if available, otherwise init to empty coordinate
+        if let latitude = Double(json[18] as! String), let longitude = Double(json[19] as! String) {
+            self.coordinate = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
+        } else{
+            self.coordinate = CLLocationCoordinate2D()
+        }
+    }
+
+    
     // subtitle displayed when user taps a pin- done this way to comform to the MKAnotation protocal
  /*   var subtitle: String?{
         return locationName
