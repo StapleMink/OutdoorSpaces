@@ -1,0 +1,1133 @@
+{
+    "meta" : {
+        "view" : {
+            "id" : "g3gs-4xzn",
+            "name" : "ParkPoints_data",
+            "averageRating" : 0,
+            "createdAt" : 1520655618,
+            "description" : "ParkPoints are the center of the park boundaries of lands operated by and/or owned by Santa Clara County Parks and Recreation Department, California. Includes SCCPRD publically accessible properties, and lands owned by SCCPRD but operated by other agencies: Rancho San Antonio, Uvas Creek Park Preserve, Silveira Property, and Sunnyvale Baylands.",
+            "displayType" : "geoRows",
+            "downloadCount" : 0,
+            "hideFromCatalog" : false,
+            "hideFromDataJson" : false,
+            "indexUpdatedAt" : 1537562776,
+            "newBackend" : true,
+            "numberOfComments" : 0,
+            "oid" : 28185586,
+            "provenance" : "official",
+            "publicationAppendEnabled" : false,
+            "publicationDate" : 1520655621,
+            "publicationGroup" : 14927272,
+            "publicationStage" : "published",
+            "rowsUpdatedAt" : 1537562648,
+            "rowsUpdatedBy" : "xiq3-38kp",
+            "tableId" : 14927272,
+            "totalTimesRated" : 0,
+            "viewCount" : 0,
+            "viewLastModified" : 1520655622,
+            "viewType" : "tabular",
+            "columns" : [ {
+                         "id" : -1,
+                         "name" : "sid",
+                         "dataTypeName" : "meta_data",
+                         "fieldName" : ":sid",
+                         "position" : 0,
+                         "renderTypeName" : "meta_data",
+                         "format" : { },
+                         "flags" : [ "hidden" ]
+                         }, {
+                         "id" : -1,
+                         "name" : "id",
+                         "dataTypeName" : "meta_data",
+                         "fieldName" : ":id",
+                         "position" : 0,
+                         "renderTypeName" : "meta_data",
+                         "format" : { },
+                         "flags" : [ "hidden" ]
+                         }, {
+                         "id" : -1,
+                         "name" : "position",
+                         "dataTypeName" : "meta_data",
+                         "fieldName" : ":position",
+                         "position" : 0,
+                         "renderTypeName" : "meta_data",
+                         "format" : { },
+                         "flags" : [ "hidden" ]
+                         }, {
+                         "id" : -1,
+                         "name" : "created_at",
+                         "dataTypeName" : "meta_data",
+                         "fieldName" : ":created_at",
+                         "position" : 0,
+                         "renderTypeName" : "meta_data",
+                         "format" : { },
+                         "flags" : [ "hidden" ]
+                         }, {
+                         "id" : -1,
+                         "name" : "created_meta",
+                         "dataTypeName" : "meta_data",
+                         "fieldName" : ":created_meta",
+                         "position" : 0,
+                         "renderTypeName" : "meta_data",
+                         "format" : { },
+                         "flags" : [ "hidden" ]
+                         }, {
+                         "id" : -1,
+                         "name" : "updated_at",
+                         "dataTypeName" : "meta_data",
+                         "fieldName" : ":updated_at",
+                         "position" : 0,
+                         "renderTypeName" : "meta_data",
+                         "format" : { },
+                         "flags" : [ "hidden" ]
+                         }, {
+                         "id" : -1,
+                         "name" : "updated_meta",
+                         "dataTypeName" : "meta_data",
+                         "fieldName" : ":updated_meta",
+                         "position" : 0,
+                         "renderTypeName" : "meta_data",
+                         "format" : { },
+                         "flags" : [ "hidden" ]
+                         }, {
+                         "id" : -1,
+                         "name" : "meta",
+                         "dataTypeName" : "meta_data",
+                         "fieldName" : ":meta",
+                         "position" : 0,
+                         "renderTypeName" : "meta_data",
+                         "format" : { },
+                         "flags" : [ "hidden" ]
+                         }, {
+                         "id" : 349110668,
+                         "name" : "the_geom",
+                         "dataTypeName" : "point",
+                         "fieldName" : "the_geom",
+                         "position" : 1,
+                         "renderTypeName" : "point",
+                         "tableColumnId" : 62222278,
+                         "cachedContents" : {
+                         "null" : "0",
+                         "top" : [ {
+                                  "item" : {
+                                  "coordinates" : [ -122.184795570543, 37.351729454254 ],
+                                  "type" : "Point"
+                                  },
+                                  "count" : "1"
+                                  }, {
+                                  "item" : {
+                                  "coordinates" : [ -122.169343996103, 37.430043087513 ],
+                                  "type" : "Point"
+                                  },
+                                  "count" : "1"
+                                  }, {
+                                  "item" : {
+                                  "coordinates" : [ -122.16780200275, 37.444755588924 ],
+                                  "type" : "Point"
+                                  },
+                                  "count" : "1"
+                                  }, {
+                                  "item" : {
+                                  "coordinates" : [ -122.163261676262, 37.449410209241 ],
+                                  "type" : "Point"
+                                  },
+                                  "count" : "1"
+                                  }, {
+                                  "item" : {
+                                  "coordinates" : [ -122.16291680616, 37.446263035397 ],
+                                  "type" : "Point"
+                                  },
+                                  "count" : "1"
+                                  }, {
+                                  "item" : {
+                                  "coordinates" : [ -122.154174527835, 37.420023342404 ],
+                                  "type" : "Point"
+                                  },
+                                  "count" : "1"
+                                  }, {
+                                  "item" : {
+                                  "coordinates" : [ -122.152289647524, 37.419031050981 ],
+                                  "type" : "Point"
+                                  },
+                                  "count" : "1"
+                                  }, {
+                                  "item" : {
+                                  "coordinates" : [ -122.150716597842, 37.424289417987 ],
+                                  "type" : "Point"
+                                  },
+                                  "count" : "1"
+                                  }, {
+                                  "item" : {
+                                  "coordinates" : [ -122.147490493952, 37.440502462192 ],
+                                  "type" : "Point"
+                                  },
+                                  "count" : "1"
+                                  }, {
+                                  "item" : {
+                                  "coordinates" : [ -122.147253984295, 37.431918192594 ],
+                                  "type" : "Point"
+                                  },
+                                  "count" : "1"
+                                  }, {
+                                  "item" : {
+                                  "coordinates" : [ -122.143624362429, 37.444114785672 ],
+                                  "type" : "Point"
+                                  },
+                                  "count" : "1"
+                                  }, {
+                                  "item" : {
+                                  "coordinates" : [ -122.142862046045, 37.425798267708 ],
+                                  "type" : "Point"
+                                  },
+                                  "count" : "1"
+                                  }, {
+                                  "item" : {
+                                  "coordinates" : [ -122.142312844305, 37.45001174162 ],
+                                  "type" : "Point"
+                                  },
+                                  "count" : "1"
+                                  }, {
+                                  "item" : {
+                                  "coordinates" : [ -122.141115138228, 37.42961769357 ],
+                                  "type" : "Point"
+                                  },
+                                  "count" : "1"
+                                  }, {
+                                  "item" : {
+                                  "coordinates" : [ -122.140038543249, 37.28540254063 ],
+                                  "type" : "Point"
+                                  },
+                                  "count" : "1"
+                                  }, {
+                                  "item" : {
+                                  "coordinates" : [ -122.138818948374, 37.410003450438 ],
+                                  "type" : "Point"
+                                  },
+                                  "count" : "1"
+                                  }, {
+                                  "item" : {
+                                  "coordinates" : [ -122.137744878781, 37.39050900678 ],
+                                  "type" : "Point"
+                                  },
+                                  "count" : "1"
+                                  }, {
+                                  "item" : {
+                                  "coordinates" : [ -122.135105360464, 37.421295314478 ],
+                                  "type" : "Point"
+                                  },
+                                  "count" : "1"
+                                  }, {
+                                  "item" : {
+                                  "coordinates" : [ -122.12881515836, 37.430281835752 ],
+                                  "type" : "Point"
+                                  },
+                                  "count" : "1"
+                                  }, {
+                                  "item" : {
+                                  "coordinates" : [ -122.126952542761, 37.407333060762 ],
+                                  "type" : "Point"
+                                  },
+                                  "count" : "1"
+                                  } ],
+                         "not_null" : "289",
+                         "cardinality" : "289"
+                         },
+                         "format" : { }
+                         }, {
+                         "id" : 349110669,
+                         "name" : "OBJECTID",
+                         "dataTypeName" : "number",
+                         "fieldName" : "objectid",
+                         "position" : 2,
+                         "renderTypeName" : "number",
+                         "tableColumnId" : 62222279,
+                         "cachedContents" : {
+                         "largest" : "289",
+                         "null" : "0",
+                         "top" : [ {
+                                  "item" : "267",
+                                  "count" : "1"
+                                  }, {
+                                  "item" : "154",
+                                  "count" : "1"
+                                  }, {
+                                  "item" : "79",
+                                  "count" : "1"
+                                  }, {
+                                  "item" : "21",
+                                  "count" : "1"
+                                  }, {
+                                  "item" : "173",
+                                  "count" : "1"
+                                  }, {
+                                  "item" : "265",
+                                  "count" : "1"
+                                  }, {
+                                  "item" : "232",
+                                  "count" : "1"
+                                  }, {
+                                  "item" : "212",
+                                  "count" : "1"
+                                  }, {
+                                  "item" : "285",
+                                  "count" : "1"
+                                  }, {
+                                  "item" : "281",
+                                  "count" : "1"
+                                  }, {
+                                  "item" : "181",
+                                  "count" : "1"
+                                  }, {
+                                  "item" : "184",
+                                  "count" : "1"
+                                  }, {
+                                  "item" : "243",
+                                  "count" : "1"
+                                  }, {
+                                  "item" : "98",
+                                  "count" : "1"
+                                  }, {
+                                  "item" : "166",
+                                  "count" : "1"
+                                  }, {
+                                  "item" : "169",
+                                  "count" : "1"
+                                  }, {
+                                  "item" : "13",
+                                  "count" : "1"
+                                  }, {
+                                  "item" : "287",
+                                  "count" : "1"
+                                  }, {
+                                  "item" : "241",
+                                  "count" : "1"
+                                  }, {
+                                  "item" : "120",
+                                  "count" : "1"
+                                  } ],
+                         "not_null" : "289",
+                         "smallest" : "1",
+                         "cardinality" : "289"
+                         },
+                         "format" : { }
+                         }, {
+                         "id" : 349110670,
+                         "name" : "PLACENAME",
+                         "dataTypeName" : "text",
+                         "fieldName" : "placename",
+                         "position" : 3,
+                         "renderTypeName" : "text",
+                         "tableColumnId" : 62222280,
+                         "cachedContents" : {
+                         "largest" : "Zolezzi Park",
+                         "null" : "0",
+                         "top" : [ {
+                                  "item" : "Martial Cottle County Park",
+                                  "count" : "1"
+                                  }, {
+                                  "item" : "Coyote Creek Parkway County Park - North",
+                                  "count" : "1"
+                                  }, {
+                                  "item" : "Crittenden School Park",
+                                  "count" : "1"
+                                  }, {
+                                  "item" : "Westwood Oak Park",
+                                  "count" : "1"
+                                  }, {
+                                  "item" : "Palo Alto Foothills Park",
+                                  "count" : "1"
+                                  }, {
+                                  "item" : "Houge Park",
+                                  "count" : "1"
+                                  }, {
+                                  "item" : "Werry Park",
+                                  "count" : "1"
+                                  }, {
+                                  "item" : "Erikson Park",
+                                  "count" : "1"
+                                  }, {
+                                  "item" : "Slater School Park",
+                                  "count" : "1"
+                                  }, {
+                                  "item" : "Columbus Park",
+                                  "count" : "1"
+                                  }, {
+                                  "item" : "Backesto Park",
+                                  "count" : "1"
+                                  }, {
+                                  "item" : "Groesbeck Hill Park",
+                                  "count" : "1"
+                                  }, {
+                                  "item" : "Montclair Park",
+                                  "count" : "1"
+                                  }, {
+                                  "item" : "Kirk Park",
+                                  "count" : "1"
+                                  }, {
+                                  "item" : "Del Anza Park",
+                                  "count" : "1"
+                                  }, {
+                                  "item" : "Uvas Canyon County Park",
+                                  "count" : "1"
+                                  }, {
+                                  "item" : "McKenzie Park",
+                                  "count" : "1"
+                                  }, {
+                                  "item" : "Marymead Park",
+                                  "count" : "1"
+                                  }, {
+                                  "item" : "Covington Mini Park",
+                                  "count" : "1"
+                                  }, {
+                                  "item" : "Starlite Park",
+                                  "count" : "1"
+                                  } ],
+                         "not_null" : "289",
+                         "smallest" : "Aborn Park",
+                         "cardinality" : "289"
+                         },
+                         "format" : { }
+                         }, {
+                         "id" : 349110671,
+                         "name" : "PLACETYPE",
+                         "dataTypeName" : "text",
+                         "fieldName" : "placetype",
+                         "position" : 4,
+                         "renderTypeName" : "text",
+                         "tableColumnId" : 62222281,
+                         "cachedContents" : {
+                         "largest" : "Park",
+                         "null" : "0",
+                         "top" : [ {
+                                  "item" : "Park",
+                                  "count" : "289"
+                                  } ],
+                         "not_null" : "289",
+                         "smallest" : "Park",
+                         "cardinality" : "1"
+                         },
+                         "format" : { }
+                         }, {
+                         "id" : 349110672,
+                         "name" : "ADDRESS",
+                         "dataTypeName" : "text",
+                         "fieldName" : "address",
+                         "position" : 5,
+                         "renderTypeName" : "text",
+                         "tableColumnId" : 62222282,
+                         "cachedContents" : {
+                         "null" : "289",
+                         "not_null" : "0",
+                         "cardinality" : "0"
+                         },
+                         "format" : { }
+                         }, {
+                         "id" : 349110673,
+                         "name" : "CITY",
+                         "dataTypeName" : "text",
+                         "fieldName" : "city",
+                         "position" : 6,
+                         "renderTypeName" : "text",
+                         "tableColumnId" : 62222283,
+                         "cachedContents" : {
+                         "null" : "289",
+                         "not_null" : "0",
+                         "cardinality" : "0"
+                         },
+                         "format" : { }
+                         }, {
+                         "id" : 349110674,
+                         "name" : "ZIP",
+                         "dataTypeName" : "text",
+                         "fieldName" : "zip",
+                         "position" : 7,
+                         "renderTypeName" : "text",
+                         "tableColumnId" : 62222284,
+                         "cachedContents" : {
+                         "null" : "289",
+                         "not_null" : "0",
+                         "cardinality" : "0"
+                         },
+                         "format" : { }
+                         }, {
+                         "id" : 349110675,
+                         "name" : "SOURCE",
+                         "dataTypeName" : "text",
+                         "fieldName" : "source",
+                         "position" : 8,
+                         "renderTypeName" : "text",
+                         "tableColumnId" : 62222285,
+                         "cachedContents" : {
+                         "largest" : "SCCPRD",
+                         "null" : "0",
+                         "top" : [ {
+                                  "item" : "ESRI",
+                                  "count" : "256"
+                                  }, {
+                                  "item" : "SCCPRD",
+                                  "count" : "31"
+                                  }, {
+                                  "item" : "PA Baylands",
+                                  "count" : "1"
+                                  }, {
+                                  "item" : "SCC-Plannning",
+                                  "count" : "1"
+                                  } ],
+                         "not_null" : "289",
+                         "smallest" : "ESRI",
+                         "cardinality" : "4"
+                         },
+                         "format" : { }
+                         }, {
+                         "id" : 349110676,
+                         "name" : "UNIQUEID",
+                         "dataTypeName" : "text",
+                         "fieldName" : "uniqueid",
+                         "position" : 9,
+                         "renderTypeName" : "text",
+                         "tableColumnId" : 62222286,
+                         "cachedContents" : {
+                         "largest" : "992010POS",
+                         "null" : "0",
+                         "top" : [ {
+                                  "item" : "1622010POS",
+                                  "count" : "1"
+                                  }, {
+                                  "item" : "832010POS",
+                                  "count" : "1"
+                                  }, {
+                                  "item" : "312011POS",
+                                  "count" : "1"
+                                  }, {
+                                  "item" : "2712010POS",
+                                  "count" : "1"
+                                  }, {
+                                  "item" : "2632010POS",
+                                  "count" : "1"
+                                  }, {
+                                  "item" : "1502010POS",
+                                  "count" : "1"
+                                  }, {
+                                  "item" : "2562010POS",
+                                  "count" : "1"
+                                  }, {
+                                  "item" : "1692010POS",
+                                  "count" : "1"
+                                  }, {
+                                  "item" : "1192010POS",
+                                  "count" : "1"
+                                  }, {
+                                  "item" : "502010POS",
+                                  "count" : "1"
+                                  }, {
+                                  "item" : "352011POS",
+                                  "count" : "1"
+                                  }, {
+                                  "item" : "1022010POS",
+                                  "count" : "1"
+                                  }, {
+                                  "item" : "1672010POS",
+                                  "count" : "1"
+                                  }, {
+                                  "item" : "1092010POS",
+                                  "count" : "1"
+                                  }, {
+                                  "item" : "2522010POS",
+                                  "count" : "1"
+                                  }, {
+                                  "item" : "962010POS",
+                                  "count" : "1"
+                                  }, {
+                                  "item" : "1722010POS",
+                                  "count" : "1"
+                                  }, {
+                                  "item" : "1712010POS",
+                                  "count" : "1"
+                                  }, {
+                                  "item" : "2242010POS",
+                                  "count" : "1"
+                                  }, {
+                                  "item" : "12011POS",
+                                  "count" : "1"
+                                  } ],
+                         "not_null" : "289",
+                         "smallest" : "1002010POS",
+                         "cardinality" : "289"
+                         },
+                         "format" : { }
+                         }, {
+                         "id" : 349110677,
+                         "name" : "SYMBOLOGYQUERY",
+                         "dataTypeName" : "text",
+                         "fieldName" : "symbologyscale",
+                         "position" : 10,
+                         "renderTypeName" : "text",
+                         "tableColumnId" : 62222287,
+                         "cachedContents" : {
+                         "largest" : "<Null>",
+                         "null" : "0",
+                         "top" : [ {
+                                  "item" : "<Null>",
+                                  "count" : "289"
+                                  } ],
+                         "not_null" : "289",
+                         "smallest" : "<Null>",
+                         "cardinality" : "1"
+                         },
+                         "format" : { }
+                         }, {
+                         "id" : 349110678,
+                         "name" : "LATITUDE",
+                         "dataTypeName" : "number",
+                         "fieldName" : "latitude",
+                         "position" : 11,
+                         "renderTypeName" : "number",
+                         "tableColumnId" : 62222288,
+                         "cachedContents" : {
+                         "largest" : "37.459260720000003",
+                         "null" : "0",
+                         "top" : [ {
+                                  "item" : "37.349069139999997",
+                                  "count" : "1"
+                                  }, {
+                                  "item" : "37.397436550000002",
+                                  "count" : "1"
+                                  }, {
+                                  "item" : "37.266145350000002",
+                                  "count" : "1"
+                                  }, {
+                                  "item" : "37.426616289999998",
+                                  "count" : "1"
+                                  }, {
+                                  "item" : "37.341937180000002",
+                                  "count" : "1"
+                                  }, {
+                                  "item" : "37.342145199999997",
+                                  "count" : "1"
+                                  }, {
+                                  "item" : "37.450006799999997",
+                                  "count" : "1"
+                                  }, {
+                                  "item" : "37.256445419999999",
+                                  "count" : "1"
+                                  }, {
+                                  "item" : "37.430740360000001",
+                                  "count" : "1"
+                                  }, {
+                                  "item" : "37.446258100000001",
+                                  "count" : "1"
+                                  }, {
+                                  "item" : "37.135893860000003",
+                                  "count" : "1"
+                                  }, {
+                                  "item" : "37.36453436",
+                                  "count" : "1"
+                                  }, {
+                                  "item" : "37.341340449999997",
+                                  "count" : "1"
+                                  }, {
+                                  "item" : "37.400883319999998",
+                                  "count" : "1"
+                                  }, {
+                                  "item" : "37.296346020000001",
+                                  "count" : "1"
+                                  }, {
+                                  "item" : "37.404231230000001",
+                                  "count" : "1"
+                                  }, {
+                                  "item" : "37.278384760000002",
+                                  "count" : "1"
+                                  }, {
+                                  "item" : "37.28039716",
+                                  "count" : "1"
+                                  }, {
+                                  "item" : "37.286562369999999",
+                                  "count" : "1"
+                                  }, {
+                                  "item" : "37.41543429",
+                                  "count" : "1"
+                                  } ],
+                         "not_null" : "289",
+                         "smallest" : "37.002200180000003",
+                         "cardinality" : "289"
+                         },
+                         "format" : { }
+                         }, {
+                         "id" : 349110679,
+                         "name" : "LONGITUDE",
+                         "dataTypeName" : "number",
+                         "fieldName" : "longitude",
+                         "position" : 12,
+                         "renderTypeName" : "number",
+                         "tableColumnId" : 62222289,
+                         "cachedContents" : {
+                         "largest" : "-121.22963407",
+                         "null" : "0",
+                         "top" : [ {
+                                  "item" : "-122.02635736000001",
+                                  "count" : "1"
+                                  }, {
+                                  "item" : "-121.93877671",
+                                  "count" : "1"
+                                  }, {
+                                  "item" : "-122.08322705",
+                                  "count" : "1"
+                                  }, {
+                                  "item" : "-121.78341451999999",
+                                  "count" : "1"
+                                  }, {
+                                  "item" : "-121.84537283",
+                                  "count" : "1"
+                                  }, {
+                                  "item" : "-122.1050743",
+                                  "count" : "1"
+                                  }, {
+                                  "item" : "-121.88979114",
+                                  "count" : "1"
+                                  }, {
+                                  "item" : "-122.08140123",
+                                  "count" : "1"
+                                  }, {
+                                  "item" : "-121.90728692",
+                                  "count" : "1"
+                                  }, {
+                                  "item" : "-121.84990969",
+                                  "count" : "1"
+                                  }, {
+                                  "item" : "-121.94470674",
+                                  "count" : "1"
+                                  }, {
+                                  "item" : "-121.88749070999999",
+                                  "count" : "1"
+                                  }, {
+                                  "item" : "-121.81324610999999",
+                                  "count" : "1"
+                                  }, {
+                                  "item" : "-122.11514948",
+                                  "count" : "1"
+                                  }, {
+                                  "item" : "-121.94308986",
+                                  "count" : "1"
+                                  }, {
+                                  "item" : "-121.87728128000001",
+                                  "count" : "1"
+                                  }, {
+                                  "item" : "-121.88432251",
+                                  "count" : "1"
+                                  }, {
+                                  "item" : "-121.87485251",
+                                  "count" : "1"
+                                  }, {
+                                  "item" : "-121.88933919",
+                                  "count" : "1"
+                                  }, {
+                                  "item" : "-121.97600206",
+                                  "count" : "1"
+                                  } ],
+                         "not_null" : "289",
+                         "smallest" : "-122.18478244000001",
+                         "cardinality" : "289"
+                         },
+                         "format" : { }
+                         }, {
+                         "id" : 349110680,
+                         "name" : "LASTUPDATE",
+                         "dataTypeName" : "date",
+                         "fieldName" : "lastupdate",
+                         "position" : 13,
+                         "renderTypeName" : "date",
+                         "tableColumnId" : 62222290,
+                         "cachedContents" : {
+                         "largest" : "2011-09-14T00:00:00.000Z",
+                         "null" : "0",
+                         "top" : [ {
+                                  "item" : "2011-09-14T00:00:00.000Z",
+                                  "count" : "289"
+                                  } ],
+                         "not_null" : "289",
+                         "smallest" : "2011-09-14T00:00:00.000Z",
+                         "cardinality" : "1"
+                         },
+                         "format" : { }
+                         }, {
+                         "id" : 349110681,
+                         "name" : "EDITOR",
+                         "dataTypeName" : "text",
+                         "fieldName" : "editor",
+                         "position" : 14,
+                         "renderTypeName" : "text",
+                         "tableColumnId" : 62222291,
+                         "cachedContents" : {
+                         "largest" : "ISD - GIS",
+                         "null" : "0",
+                         "top" : [ {
+                                  "item" : "ISD - GIS",
+                                  "count" : "289"
+                                  } ],
+                         "not_null" : "289",
+                         "smallest" : "ISD - GIS",
+                         "cardinality" : "1"
+                         },
+                         "format" : { }
+                         }, {
+                         "id" : 349110682,
+                         "name" : "NOTES",
+                         "dataTypeName" : "text",
+                         "fieldName" : "notes",
+                         "position" : 15,
+                         "renderTypeName" : "text",
+                         "tableColumnId" : 62222292,
+                         "cachedContents" : {
+                         "largest" : "YES",
+                         "null" : "0",
+                         "top" : [ {
+                                  "item" : "Not Determined",
+                                  "count" : "256"
+                                  }, {
+                                  "item" : "YES",
+                                  "count" : "31"
+                                  }, {
+                                  "item" : "Yes",
+                                  "count" : "2"
+                                  } ],
+                         "not_null" : "289",
+                         "smallest" : "Not Determined",
+                         "cardinality" : "3"
+                         },
+                         "format" : { }
+                         }, {
+                         "id" : 349110683,
+                         "name" : "POICatagory",
+                         "dataTypeName" : "text",
+                         "fieldName" : "poicatagory",
+                         "position" : 16,
+                         "renderTypeName" : "text",
+                         "tableColumnId" : 62222293,
+                         "cachedContents" : {
+                         "largest" : "Leisure",
+                         "null" : "0",
+                         "top" : [ {
+                                  "item" : "Leisure",
+                                  "count" : "289"
+                                  } ],
+                         "not_null" : "289",
+                         "smallest" : "Leisure",
+                         "cardinality" : "1"
+                         },
+                         "format" : { }
+                         } ],
+            "grants" : [ {
+                        "inherited" : false,
+                        "type" : "viewer",
+                        "flags" : [ "public" ]
+                        } ],
+            "owner" : {
+                "id" : "inws-vnhj",
+                "displayName" : "GIS",
+                "screenName" : "GIS",
+                "type" : "interactive",
+                "flags" : [ "mayBeStoriesCoOwner" ]
+            },
+            "query" : { },
+            "rights" : [ "read" ],
+            "tableAuthor" : {
+                "id" : "inws-vnhj",
+                "displayName" : "GIS",
+                "screenName" : "GIS",
+                "type" : "interactive",
+                "flags" : [ "mayBeStoriesCoOwner" ]
+            },
+            "flags" : [ "default" ]
+        }
+    },
+    "data" : [ [ "row-9fgb-d8r2-fmzn", "00000000-0000-0000-1029-4A2787B55F22", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.828002162912 37.345196851585)", "78", "Cassell Park", "Park", null, null, null, "ESRI", "832010POS", "<Null>", "37.345191900000003", "-121.82798909", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-9pd7~4p82-vqvk", "00000000-0000-0000-5075-1FE369F33E63", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.873064022903 37.420063317865)", "249", "Sinnott Park", "Park", null, null, null, "ESRI", "2542010POS", "<Null>", "37.420058359999999", "-121.87305093000001", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-gja4_uuiz-gijj", "00000000-0000-0000-AB5A-01FC12911CBE", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-122.104863393974 37.45368249451)", "68", "Byxbee Recreation Area", "Park", null, null, null, "ESRI", "732010POS", "<Null>", "37.453677550000002", "-122.10485026000001", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-kfy8.6tz8-cc29", "00000000-0000-0000-C5AF-401C25377335", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.874158389001 37.388247917102)", "117", "Flickering Park", "Park", null, null, null, "ESRI", "1222010POS", "<Null>", "37.38824297", "-121.8741453", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-8h74.e8gq.2v4b", "00000000-0000-0000-2E16-FF4A0D53891F", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-122.021309894264 37.31905488645)", "284", "Wilson Park", "Park", null, null, null, "ESRI", "2892010POS", "<Null>", "37.31904995", "-122.02129678999999", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-36aq~hvmb_zh55", "00000000-0000-0000-F0D1-AA0EFF184F1D", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-122.150716597842 37.424289417987)", "72", "Cameron Park", "Park", null, null, null, "ESRI", "772010POS", "<Null>", "37.424284479999997", "-122.15070346", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-bxxi.t6us.advd", "00000000-0000-0000-31D2-D53A16C4D93E", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.955244595421 37.233326441718)", "54", "Blossom Hill Park", "Park", null, null, null, "ESRI", "592010POS", "<Null>", "37.233321510000003", "-121.95523151", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-cbky.grx6_c8rd", "00000000-0000-0000-EF5F-F4D1065EB27C", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.812522507207 37.233184270317)", "157", "La Colina Park", "Park", null, null, null, "ESRI", "1622010POS", "<Null>", "37.233179329999999", "-121.81250944999999", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-ctwj-rxhi~ji3h", "00000000-0000-0000-7575-D666DF1BA287", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.825344401151 37.339302107599)", "146", "Hillview Park", "Park", null, null, null, "ESRI", "1512010POS", "<Null>", "37.339297160000001", "-121.82533132", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-rxgr.i4kw-gtcc", "00000000-0000-0000-3B88-D4BFC5422FEA", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.973767226712 37.358445345041)", "58", "Bowers Park", "Park", null, null, null, "ESRI", "632010POS", "<Null>", "37.358440399999999", "-121.97375413", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-nq6v_ns9r~eeqg", "00000000-0000-0000-144E-028A30C7CF6B", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.979494629108 37.296706528993)", "140", "Hathway Park", "Park", null, null, null, "ESRI", "1452010POS", "<Null>", "37.296701589999998", "-121.97948153", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-mk8d_acg3.2ask", "00000000-0000-0000-6A78-6292A43D2C4D", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.858561580051 37.357299405207)", "220", "Plato Arroyo Park", "Park", null, null, null, "ESRI", "2252010POS", "<Null>", "37.357294459999999", "-121.8585485", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-yvjv-jp78_q6mb", "00000000-0000-0000-0A65-6E0E389A9CD1", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.906316645427 37.343054435944)", "98", "Demonstration Orchard", "Park", null, null, null, "ESRI", "1032010POS", "<Null>", "37.343049489999999", "-121.90630356", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-cfvf_8uia~eu6a", "00000000-0000-0000-B30F-EB6A687B5510", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.844588344549 37.26887973488)", "213", "Parkview Park Two", "Park", null, null, null, "ESRI", "2182010POS", "<Null>", "37.268874789999998", "-121.84457527000001", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-d2pt~wp4a.ghx5", "00000000-0000-0000-3CCC-620E1B3AE45D", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-122.004280045831 37.270737682187)", "122", "Gardiner Park", "Park", null, null, null, "ESRI", "1272010POS", "<Null>", "37.270732750000001", "-122.00426695", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-deq3.bmmp.kkxf", "00000000-0000-0000-42A3-CEC35CB0688A", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.85157699152 37.236328233498)", "118", "Foothill Park", "Park", null, null, null, "ESRI", "1232010POS", "<Null>", "37.236323290000001", "-121.85156392", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-ugtc~yhnr.k4dy", "00000000-0000-0000-FF68-FAA54F8C0C03", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-122.018601665993 37.347750459125)", "210", "Panama Park", "Park", null, null, null, "ESRI", "2152010POS", "<Null>", "37.347745519999997", "-122.01858856", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-dq9a_xbfh_i2p6", "00000000-0000-0000-1000-BBE2F4CB7935", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.951733262959 37.265418019258)", "19", "Los Gatos Creek County Park", "Park", null, null, null, "SCCPRD", "192011POS", "<Null>", "37.265413080000002", "-121.95172018", 1315958400, "ISD - GIS", "YES", "Leisure" ]
+              , [ "row-dgmx_rzj2.8vem", "00000000-0000-0000-4FE9-7A9A4E8DF270", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-122.035591322516 37.258314994932)", "281", "Wildwood Park", "Park", null, null, null, "ESRI", "2862010POS", "<Null>", "37.25831007", "-122.03557822", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-7xgc_6j9i~rivf", "00000000-0000-0000-2281-85C81C123253", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.820223491172 37.264327428879)", "106", "Edenvale Garden Park", "Park", null, null, null, "ESRI", "1112010POS", "<Null>", "37.264322479999997", "-121.82021042", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-65cz.k2y6-3pyy", "00000000-0000-0000-748B-222FF143D952", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-122.015236901099 37.3164495776)", "91", "Creekside Park", "Park", null, null, null, "ESRI", "962010POS", "<Null>", "37.31644464", "-122.0152238", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-nbx8_pcnv.uzgc", "00000000-0000-0000-DC43-ED5C64386C73", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.908508694165 37.343109280796)", "132", "Guadalupe Gardens", "Park", null, null, null, "ESRI", "1372010POS", "<Null>", "37.343104339999996", "-121.90849559999999", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-qnk6_7fjv-3ydh", "00000000-0000-0000-38E8-B6DC63091FF0", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-122.074406492157 37.404236166293)", "239", "San Veron Park", "Park", null, null, null, "ESRI", "2442010POS", "<Null>", "37.404231230000001", "-122.07439337", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-ic6c-5gwb-pyrw", "00000000-0000-0000-7B98-05B36EDFCD21", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.895309728725 37.446011792102)", "270", "Walter Reuther Park", "Park", null, null, null, "ESRI", "2752010POS", "<Null>", "37.446006840000003", "-121.89529663", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-ri3f~dcwy-mwcm", "00000000-0000-0000-B8EF-B8DDACD44912", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-122.023659391669 37.288882231451)", "47", "Azule Park", "Park", null, null, null, "ESRI", "522010POS", "<Null>", "37.288877300000003", "-122.02364629", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-jasc-kvkj-hbdc", "00000000-0000-0000-BA08-50690FD742ED", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-122.115162610537 37.459265654936)", "32", "Palo Alto Baylands Preserve", "Park", null, null, null, "PA Baylands", "322004POS", "<Null>", "37.459260720000003", "-122.11514948", 1315958400, "ISD - GIS", "Yes", "Leisure" ]
+              , [ "row-x8fj.26k6~zsv2", "00000000-0000-0000-6BE9-4B220F08AFCA", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.990802316237 37.345851399807)", "105", "Earl J Carmichael Park", "Park", null, null, null, "ESRI", "1102010POS", "<Null>", "37.345846459999997", "-121.99078921", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-pcrj~x9tq~un3c", "00000000-0000-0000-7883-5C6D24DC06C5", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-122.118272786307 37.376884856536)", "165", "Lincoln Park", "Park", null, null, null, "ESRI", "1702010POS", "<Null>", "37.37687992", "-122.11825966000001", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-kjum~2pb3-pkzu", "00000000-0000-0000-7B50-AEE4D1E1B5A4", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.875659766095 37.426621239464)", "198", "Murphy Park", "Park", null, null, null, "ESRI", "2032010POS", "<Null>", "37.426616289999998", "-121.87564666999999", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-aygv~p5g9_vupm", "00000000-0000-0000-F843-FC320C21A4EA", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-122.073089094084 37.368472056016)", "88", "Cooper Park", "Park", null, null, null, "ESRI", "932010POS", "<Null>", "37.368467119999998", "-122.07307598", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-3b7t-w7cu_m6gs", "00000000-0000-0000-4415-BE967758ABC2", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.975387376385 37.279484046316)", "238", "San Tomas Park", "Park", null, null, null, "ESRI", "2432010POS", "<Null>", "37.279479109999997", "-121.97537428", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-wd5f_3qya~3ruy", "00000000-0000-0000-A9B3-61BE84363CD1", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.873003348291 37.345998995345)", "234", "Roosevelt Park", "Park", null, null, null, "ESRI", "2392010POS", "<Null>", "37.345994050000002", "-121.87299025999999", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-v6mj.7zud_wvpw", "00000000-0000-0000-ECB5-352B0592509A", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.907500591453 37.408778728807)", "218", "Pinewood Park", "Park", null, null, null, "ESRI", "2232010POS", "<Null>", "37.408773779999997", "-121.9074875", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-uevj~f79u~chpf", "00000000-0000-0000-8116-EA280EB3C40B", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.879009427146 37.236849610308)", "133", "Guadalupe Oak Grove Park", "Park", null, null, null, "ESRI", "1382010POS", "<Null>", "37.236844670000004", "-121.87899634999999", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-4x7x~ya37_5f49", "00000000-0000-0000-2E83-8A27969A723A", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.968643405234 37.336565062296)", "173", "Mary Gomez Park", "Park", null, null, null, "ESRI", "1782010POS", "<Null>", "37.336560120000001", "-121.96863030999999", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-78p6-9m2s_69bz", "00000000-0000-0000-EE56-B95A96234186", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.88091238514 37.407183558275)", "202", "Northwood Park", "Park", null, null, null, "ESRI", "2072010POS", "<Null>", "37.407178610000003", "-121.88089929", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-yr54_nbae_qfeg", "00000000-0000-0000-146B-61B4FD44E00C", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-122.031167786887 37.241228641798)", "2", "Villa Montalvo County Park", "Park", null, null, null, "SCCPRD", "22011POS", "<Null>", "37.24122371", "-122.03115468999999", 1315958400, "ISD - GIS", "YES", "Leisure" ]
+              , [ "row-xiej-zqk2-m62p", "00000000-0000-0000-26D0-E83347EB8392", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.833133035447 37.351554241777)", "75", "Capitol Park", "Park", null, null, null, "ESRI", "802010POS", "<Null>", "37.351549290000001", "-121.83311996", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-tdfn~77d7~fnz5", "00000000-0000-0000-B849-9622A1770572", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.987965989874 37.359402592024)", "170", "Machado Park", "Park", null, null, null, "ESRI", "1752010POS", "<Null>", "37.359397649999998", "-121.98795289", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-8nag_b2wx_pdj4", "00000000-0000-0000-C618-16651E0098D6", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-122.135105360464 37.421295314478)", "56", "Boulware Park", "Park", null, null, null, "ESRI", "612010POS", "<Null>", "37.421290380000002", "-122.13509223", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-qrt7-ncjk.er8s", "00000000-0000-0000-D926-8E241BA76A07", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-122.126952542761 37.407333060762)", "63", "Briones Park", "Park", null, null, null, "ESRI", "682010POS", "<Null>", "37.407328130000003", "-122.12693941000001", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-uzax-7u8y_jd74", "00000000-0000-0000-B4DC-CD7B03481D53", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.889804212246 37.23300701219)", "258", "T J Martin Park", "Park", null, null, null, "ESRI", "2632010POS", "<Null>", "37.233002079999999", "-121.88979114", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-fftc.wipb~m449", "00000000-0000-0000-3FC7-B37172D3534E", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-122.125988183427 37.401437754726)", "260", "Terman Park", "Park", null, null, null, "ESRI", "2652010POS", "<Null>", "37.401432819999997", "-122.12597504999999", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-wqmw.kizu_ttj4", "00000000-0000-0000-27C6-44FDFDF501FC", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-122.086215531034 37.389147168905)", "104", "Eagle Park", "Park", null, null, null, "ESRI", "1092010POS", "<Null>", "37.389142229999997", "-122.08620241", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-yn76_ptc5_qdp2", "00000000-0000-0000-C49A-4EDF4FF80314", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.81822519064 37.281402425993)", "182", "Melody Park", "Park", null, null, null, "ESRI", "1872010POS", "<Null>", "37.281397480000003", "-121.81821212", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-8abm_fek2.kzkg", "00000000-0000-0000-F431-E1648364F916", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.832998340877 37.285704913436)", "251", "Solari Park", "Park", null, null, null, "ESRI", "2562010POS", "<Null>", "37.285699970000003", "-121.83298526999999", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-gcph.6aea~ukpk", "00000000-0000-0000-1B03-A27E96435473", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-122.114897509912 37.421073244345)", "187", "Mitchell Park", "Park", null, null, null, "ESRI", "1922010POS", "<Null>", "37.421068310000003", "-122.11488438000001", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-2txw~emyp-pqyc", "00000000-0000-0000-ECBA-5CAF192EDBE2", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.696330319254 37.076735942515)", "15", "Uvas Reservoir County Park", "Park", null, null, null, "SCCPRD", "152011POS", "<Null>", "37.076731010000003", "-121.69631729", 1315958400, "ISD - GIS", "YES", "Leisure" ]
+              , [ "row-nxai_ih2c~5a57", "00000000-0000-0000-3587-379387A65777", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.850977382029 37.220713552486)", "128", "Graystone Park", "Park", null, null, null, "ESRI", "1332010POS", "<Null>", "37.220708610000003", "-121.85096430999999", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-c8gf~8xg2_qj9h", "00000000-0000-0000-1A74-86337A4F1480", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.868361902952 37.335635777598)", "282", "William Street Park", "Park", null, null, null, "ESRI", "2872010POS", "<Null>", "37.335630829999999", "-121.86834881999999", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-vkmm_4qpv_gjfk", "00000000-0000-0000-FF2C-FD8D197DF335", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.870527375269 37.269945225452)", "261", "Terrell Park", "Park", null, null, null, "ESRI", "2662010POS", "<Null>", "37.26994028", "-121.8705143", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-tu8x.79wc~qw5c", "00000000-0000-0000-1321-9D806E635F33", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.798507772251 37.078948673687)", "14", "Uvas Canyon County Park", "Park", null, null, null, "SCCPRD", "142011POS", "<Null>", "37.07894374", "-121.79849473", 1315958400, "ISD - GIS", "YES", "Leisure" ]
+              , [ "row-sd6b~msjs_qyy4", "00000000-0000-0000-B871-684409ADB5D0", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.989952391357 37.317031855254)", "186", "Mise Park", "Park", null, null, null, "ESRI", "1912010POS", "<Null>", "37.317026920000004", "-121.98993929", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-txxh.fxbm.83u5", "00000000-0000-0000-97D4-CBBC57CAD5CE", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-122.042130778656 37.251279550845)", "136", "Hakone Park", "Park", null, null, null, "ESRI", "1412010POS", "<Null>", "37.251274619999997", "-122.04211768", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-btta.2m8g_tx89", "00000000-0000-0000-A056-C0E389AB3E71", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-122.083596025867 37.380887242545)", "126", "Graham School Park", "Park", null, null, null, "ESRI", "1312010POS", "<Null>", "37.380882309999997", "-122.08358291", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-bis9_d78r~ak6w", "00000000-0000-0000-4F79-40703FD88660", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-122.140038543249 37.28540254063)", "13", "Upper Stevens Creek County Park", "Park", null, null, null, "SCCPRD", "132011POS", "<Null>", "37.285397619999998", "-122.14002542999999", 1315958400, "ISD - GIS", "YES", "Leisure" ]
+              , [ "row-x3pz_gjfj.kxdq", "00000000-0000-0000-DB40-0E03973844F5", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.87218609258 37.380934047394)", "266", "Vinci Park", "Park", null, null, null, "ESRI", "2712010POS", "<Null>", "37.380929100000003", "-121.872173", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-gbdr~frzh_b9qu", "00000000-0000-0000-C388-45FA3F92634E", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-122.147490493952 37.440502462192)", "59", "Bowling Green Park", "Park", null, null, null, "ESRI", "642010POS", "<Null>", "37.440497530000002", "-122.14747736", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-vjxj~h5zr-abmu", "00000000-0000-0000-380A-9B5D048B2BC5", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.998847528942 37.281762923419)", "108", "El Quito Park", "Park", null, null, null, "ESRI", "1132010POS", "<Null>", "37.281757990000003", "-121.99883443", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-cwdk_funk_356w", "00000000-0000-0000-091B-C1B05DEE7EEE", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-122.01954074041 37.36382990194)", "61", "Braly Park", "Park", null, null, null, "ESRI", "662010POS", "<Null>", "37.363824960000002", "-122.01952763", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-pyn9~892e~3ktm", "00000000-0000-0000-5BF1-99F94E5DD073", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.809115162867 37.333795669103)", "159", "Lake Cunningham Park", "Park", null, null, null, "ESRI", "1642010POS", "<Null>", "37.333790720000003", "-121.80910209", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-muv2_cijn-mud3", "00000000-0000-0000-CD75-C380A7F5D368", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-122.086581331207 37.358612834675)", "143", "Heritage Oaks Park", "Park", null, null, null, "ESRI", "1482010POS", "<Null>", "37.358607900000003", "-122.08656821", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-db8a-84kv-7qzy", "00000000-0000-0000-E4D5-8BAF8B597F05", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.604963598786 37.136879042941)", "151", "Jackson Oaks Park", "Park", null, null, null, "ESRI", "1562010POS", "<Null>", "37.136874089999999", "-121.60495057999999", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-878c_42h4-xgjm", "00000000-0000-0000-5690-38C04125222B", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.852175598572 37.271608693328)", "181", "Meadows Park", "Park", null, null, null, "ESRI", "1862010POS", "<Null>", "37.271603749999997", "-121.85216253", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-d9bq.3rdn_mxhz", "00000000-0000-0000-E964-414A2FBECC52", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-122.054766800165 37.358005605999)", "97", "Del Anza Park", "Park", null, null, null, "ESRI", "1022010POS", "<Null>", "37.358000670000003", "-122.05475369", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-h3w6-zmhh.ju7g", "00000000-0000-0000-43E6-AD5560DC720E", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.838975184703 37.385407768361)", "83", "Cimarron Park", "Park", null, null, null, "ESRI", "882010POS", "<Null>", "37.385402820000003", "-121.8389621", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-vbq2~nf5k.vrmm", "00000000-0000-0000-A19E-0AF965AA3930", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.796024504567 37.347434262022)", "116", "Fernish Park", "Park", null, null, null, "ESRI", "1212010POS", "<Null>", "37.347429310000003", "-121.79601142999999", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-73mi.4hbs-p972", "00000000-0000-0000-1850-CB5A295D2A38", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.850361877405 37.263017603195)", "267", "Vista Park", "Park", null, null, null, "ESRI", "2722010POS", "<Null>", "37.263012660000001", "-121.85034881", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-bbgw.aq9i~zvq7", "00000000-0000-0000-C047-2E96B03BB7F9", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.824314124737 37.256160940385)", "90", "Coy Park", "Park", null, null, null, "ESRI", "952010POS", "<Null>", "37.256155999999997", "-121.82430106", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-yh5e-z6es~wx9k", "00000000-0000-0000-6EB7-E271571ABD16", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.80204414396 37.306408010786)", "287", "Boggini Park", "Park", null, null, null, "ESRI", "2922010POS", "<Null>", "37.306403060000001", "-121.80203107", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-iccq~xk3y-b2cm", "00000000-0000-0000-D587-7F33555B3ECF", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.701972385609 37.356843944633)", "3", "Joseph D. Grant County Park", "Park", null, null, null, "SCCPRD", "32011POS", "<Null>", "37.356838979999999", "-121.70195932999999", 1315958400, "ISD - GIS", "YES", "Leisure" ]
+              , [ "row-ju3d-apdv_kt2t", "00000000-0000-0000-163C-97FC2B6D2181", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.563209405378 37.012664847881)", "240", "San Ysidro Park", "Park", null, null, null, "ESRI", "2452010POS", "<Null>", "37.012659910000004", "-121.5631964", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-3ejc.gpem-b5ug", "00000000-0000-0000-0B05-134DAA1FFF04", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.964187092891 37.345033594494)", "255", "Steve Carli Park", "Park", null, null, null, "ESRI", "2602010POS", "<Null>", "37.345028650000003", "-121.96417399000001", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-ykim.uje9_b9bp", "00000000-0000-0000-47D0-8FA6C3E01296", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.817993378173 37.247337730722)", "185", "Miner Park", "Park", null, null, null, "ESRI", "1902010POS", "<Null>", "37.247332790000002", "-121.81798031", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-f9t6_pmx4.hjai", "00000000-0000-0000-1298-776F8A839584", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.790829586163 37.32807529949)", "203", "Norwood Creek Park", "Park", null, null, null, "ESRI", "2082010POS", "<Null>", "37.328070349999997", "-121.79081652000001", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-2ir6_zain_f5it", "00000000-0000-0000-360D-5DF913A5F6C7", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-122.138818948374 37.410003450438)", "55", "Bol Park", "Park", null, null, null, "ESRI", "602010POS", "<Null>", "37.409998520000002", "-122.13880582", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-h47g~tnyr.xur4", "00000000-0000-0000-E46B-0302D204394A", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-122.163261676262 37.449410209241)", "154", "Johnson Park", "Park", null, null, null, "ESRI", "1592010POS", "<Null>", "37.44940527", "-122.16324854", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-8h3g~63gn-qdnn", "00000000-0000-0000-CF10-2526F14C576E", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-122.000191690047 37.397441494498)", "160", "Lakewood Park", "Park", null, null, null, "ESRI", "1652010POS", "<Null>", "37.397436550000002", "-122.00017858", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-7vtb~rb6s~u6yk", "00000000-0000-0000-BAE1-FC758527822E", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-122.088516775033 37.385552187262)", "178", "McKelvey Park", "Park", null, null, null, "ESRI", "1832010POS", "<Null>", "37.385547250000002", "-122.08850365000001", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-8vtg-jyyc.b4p4", "00000000-0000-0000-4B81-3050C275A3C8", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-122.013384655652 37.280366595283)", "87", "Congress Springs Park", "Park", null, null, null, "ESRI", "922010POS", "<Null>", "37.280361659999997", "-122.01337156", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-j83b_xxma_8vy7", "00000000-0000-0000-B45D-505709D0B1B5", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-122.137744878781 37.39050900678)", "113", "Esther Clark Park", "Park", null, null, null, "ESRI", "1182010POS", "<Null>", "37.390504069999999", "-122.13773175", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-9m2y-4k8p.swk5", "00000000-0000-0000-B515-37C1EA608889", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.96497922698 37.307566264933)", "253", "Starbird Park", "Park", null, null, null, "ESRI", "2582010POS", "<Null>", "37.307561329999999", "-121.96496612999999", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-jm5r.yy9m~p5ei", "00000000-0000-0000-09E9-EEFC9BD6C5D8", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-122.169343996103 37.430043087513)", "262", "The Oval Park", "Park", null, null, null, "ESRI", "2672010POS", "<Null>", "37.430038150000001", "-122.16933086", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-gn8c_huxq-k27b", "00000000-0000-0000-1627-B927DF831C95", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-122.056659578512 37.349074079348)", "237", "San Antonio Park", "Park", null, null, null, "ESRI", "2422010POS", "<Null>", "37.349069139999997", "-122.05664647", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-kue5_ns5u_z3cs", "00000000-0000-0000-BC0C-92C1A7089CB0", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.698882929307 37.117184069502)", "8", "Chesbro Reservoir County Park", "Park", null, null, null, "SCCPRD", "82011POS", "<Null>", "37.117179129999997", "-121.69886990000001", 1315958400, "ISD - GIS", "YES", "Leisure" ]
+              , [ "row-a77v~pvks-fgkh", "00000000-0000-0000-00FA-C55E3C2C5B28", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.977372407738 37.197070752239)", "23", "Lexington Reservoir County Park", "Park", null, null, null, "SCCPRD", "232011POS", "<Null>", "37.197065819999999", "-121.97735932000001", 1315958400, "ISD - GIS", "YES", "Leisure" ]
+              , [ "row-8pv3.k5dz_na4h", "00000000-0000-0000-5F41-FFC21D07D471", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.865507584823 37.262470612281)", "112", "Erikson Park", "Park", null, null, null, "ESRI", "1172010POS", "<Null>", "37.262465669999997", "-121.86549451", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-qmue~gjed_tx6n", "00000000-0000-0000-59E2-876C29A1DBA7", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.60908681582 37.167439646504)", "17", "Anderson Lake County Park", "Park", null, null, null, "SCCPRD", "172011POS", "<Null>", "37.167434700000001", "-121.60907379", 1315958400, "ISD - GIS", "YES", "Leisure" ]
+              , [ "row-d4cw_aq3g~myh8", "00000000-0000-0000-54AD-4A856A12D9D5", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-122.083361311547 37.378005133746)", "66", "Bubb Park", "Park", null, null, null, "ESRI", "712010POS", "<Null>", "37.378000200000002", "-122.08334819", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-9xwn-yd3m~tjbf", "00000000-0000-0000-DCC7-3AD08334871B", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.941947587619 37.304256503835)", "138", "Hamann Park", "Park", null, null, null, "ESRI", "1432010POS", "<Null>", "37.304251559999997", "-121.9419345", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-7exz-c2ns-bte7", "00000000-0000-0000-526D-C1ED50581470", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.813259180084 37.316758090877)", "180", "Meadow Park", "Park", null, null, null, "ESRI", "1852010POS", "<Null>", "37.316753140000003", "-121.81324610999999", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-54g2.ei7j~akrg", "00000000-0000-0000-9534-8A9AC24C5B69", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.727472883815 37.232199265923)", "20", "Motorcycle County Park", "Park", null, null, null, "SCCPRD", "202011POS", "<Null>", "37.232194319999998", "-121.72745983", 1315958400, "ISD - GIS", "YES", "Leisure" ]
+              , [ "row-htck-mqhh_9tyj", "00000000-0000-0000-EAFD-AB5E26E5E00F", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.846615330654 37.272710947837)", "211", "Parkview Park One", "Park", null, null, null, "ESRI", "2162010POS", "<Null>", "37.272705999999999", "-121.84660226", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-5cu8.su5c_4ue5", "00000000-0000-0000-5112-9D600484F1F9", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.916813650842 37.273794611749)", "101", "Doerr Park", "Park", null, null, null, "ESRI", "1062010POS", "<Null>", "37.273789669999999", "-121.91680057000001", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-umfy.88jn-c2wj", "00000000-0000-0000-937F-14AAE818A8B1", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-122.10009803597 37.408885020477)", "189", "Monta Loma Park", "Park", null, null, null, "ESRI", "1942010POS", "<Null>", "37.408880080000003", "-122.10008491000001", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-dcwe-d7kh_vuaz", "00000000-0000-0000-2FA3-BD0652254CD9", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.891158868491 37.338912286245)", "236", "Saint James Park", "Park", null, null, null, "ESRI", "2412010POS", "<Null>", "37.338907339999999", "-121.89114578", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-tqwf~zy47-5ck2", "00000000-0000-0000-8C61-0A984AC95A40", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.802587279176 37.277479122992)", "25", "Coyote Creek Parkway County Park - North", "Park", null, null, null, "SCCPRD", "252011POS", "<Null>", "37.277474179999999", "-121.80257421", 1315958400, "ISD - GIS", "YES", "Leisure" ]
+              , [ "row-5jt7_ntmr_nin9", "00000000-0000-0000-F9F6-D649B6B4692E", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-122.06822886265 37.400825636665)", "279", "Whisman School Park", "Park", null, null, null, "ESRI", "2842010POS", "<Null>", "37.400820699999997", "-122.06821574", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-28wc_e3sg-qaja", "00000000-0000-0000-10BA-0D4D21E8ACD9", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-122.091774063288 37.358581679131)", "179", "McKenzie Park", "Park", null, null, null, "ESRI", "1842010POS", "<Null>", "37.358576749999997", "-122.09176094", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-9iz6~knkn_duib", "00000000-0000-0000-643A-C8D7392287B8", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.996130495474 37.301644964358)", "242", "Saratoga Creek Park", "Park", null, null, null, "ESRI", "2472010POS", "<Null>", "37.301640030000002", "-121.9961174", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-8kjg-jxpy_pggt", "00000000-0000-0000-89A3-C9E1FA6BF1E4", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.451271869606 37.154006480314)", "142", "Henry Coe State Park", "Park", null, null, null, "ESRI", "1472010POS", "<Null>", "37.154001520000001", "-121.45125887", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-pev8_r5vd~bvs5", "00000000-0000-0000-5475-9DEDCB910310", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-122.152289647524 37.419031050981)", "275", "Weissharr Park", "Park", null, null, null, "ESRI", "2802010POS", "<Null>", "37.419026119999998", "-122.15227650999999", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-dt5j~3uyr~yedj", "00000000-0000-0000-BD27-6E4AE83E511F", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.809614213143 37.298867989194)", "102", "Dove Hill Park", "Park", null, null, null, "ESRI", "1072010POS", "<Null>", "37.298863040000001", "-121.80960114", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-riqb.dum5~vhb4", "00000000-0000-0000-56D0-B290F0A3B2B0", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.879920650621 37.232562853644)", "125", "Golden Oaks Park", "Park", null, null, null, "ESRI", "1302010POS", "<Null>", "37.232557919999998", "-121.87990757999999", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-smgn.nuu8_vxbb", "00000000-0000-0000-99AA-E82E52782CF6", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.773368666153 37.21552862782)", "22", "Santa Teresa County Park", "Park", null, null, null, "SCCPRD", "222011POS", "<Null>", "37.215523679999997", "-121.77335561", 1315958400, "ISD - GIS", "YES", "Leisure" ]
+              , [ "row-ktpj.2js3~268a", "00000000-0000-0000-7644-84EE870F5BDF", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.805543796686 37.26801479857)", "129", "Great Oaks Park", "Park", null, null, null, "ESRI", "1342010POS", "<Null>", "37.268009849999999", "-121.80553073", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-f93i.5ii5_mkyi", "00000000-0000-0000-C855-ECB81D0BEE47", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-122.084763266544 37.409957484981)", "93", "Crittenden School Park", "Park", null, null, null, "ESRI", "982010POS", "<Null>", "37.40995255", "-122.08475014", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-t5ek-7fne_wxbw", "00000000-0000-0000-92BE-DDDA180CE726", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-122.141115138228 37.42961769357)", "57", "Bowden Park", "Park", null, null, null, "ESRI", "622010POS", "<Null>", "37.429612759999998", "-122.141102", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-dtqc-66rf.wdqp", "00000000-0000-0000-297F-DDA5E45053E5", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-122.096525456701 37.400888256676)", "229", "Rengstorff Park", "Park", null, null, null, "ESRI", "2342010POS", "<Null>", "37.400883319999998", "-122.09651233", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-b8kp-fsy5-cng2", "00000000-0000-0000-0A90-B3F0460683A9", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.859745035384 37.409970608699)", "52", "Berryessa Creek Park", "Park", null, null, null, "ESRI", "572010POS", "<Null>", "37.409965659999997", "-121.85973195", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-zbfx-h77x.vtke", "00000000-0000-0000-824D-47C50810ACD3", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.657003364847 37.030503903799)", "9", "Chitactac-Adams County Park", "Park", null, null, null, "SCCPRD", "92011POS", "<Null>", "37.030498969999996", "-121.65699035", 1315958400, "ISD - GIS", "YES", "Leisure" ]
+              , [ "row-3vzi_7bax-3kwi", "00000000-0000-0000-ABBF-89FEB734AF3C", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.835609919822 37.240140916265)", "86", "Comanche Park", "Park", null, null, null, "ESRI", "912010POS", "<Null>", "37.240135979999998", "-121.83559685", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-4hah_3ad3_bj8e", "00000000-0000-0000-95FD-58313286CBD9", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-122.147253984295 37.431918192594)", "216", "Peers Park", "Park", null, null, null, "ESRI", "2212010POS", "<Null>", "37.431913260000002", "-122.14724085", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-j29a-eept_2jbw", "00000000-0000-0000-BFFD-8C22DBA11970", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.915858814403 37.452469364392)", "99", "Dixon Landing Park", "Park", null, null, null, "ESRI", "1042010POS", "<Null>", "37.452464409999997", "-121.91584571", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-p5s2-zsk9_wqnq", "00000000-0000-0000-F53D-CC50DCA47FB2", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.895666263584 37.355582259659)", "51", "Bernal Park", "Park", null, null, null, "ESRI", "562010POS", "<Null>", "37.355577310000001", "-121.89565318", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-f6hs-jj6q.fubk", "00000000-0000-0000-8F4F-036B2EC015AB", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.903173746518 37.457061041408)", "42", "Albert Augustine Park", "Park", null, null, null, "ESRI", "472010POS", "<Null>", "37.457056090000002", "-121.90316065", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-v2wc.8iag-emyj", "00000000-0000-0000-CCD1-34979F39C595", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.928615034374 37.331781245027)", "196", "Municipal Rose Garden", "Park", null, null, null, "ESRI", "2012010POS", "<Null>", "37.331776300000001", "-121.92860193999999", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-f5fz_fshk-qauc", "00000000-0000-0000-A7DE-DDCA73D5E6D5", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.961889213626 37.392868640492)", "41", "Agnew Park", "Park", null, null, null, "ESRI", "462010POS", "<Null>", "37.392863699999999", "-121.96187611000001", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-yrmz_u4xy-cu54", "00000000-0000-0000-A149-642648B6938B", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.94310294357 37.256450356015)", "149", "Houge Park", "Park", null, null, null, "ESRI", "1542010POS", "<Null>", "37.256445419999999", "-121.94308986", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-bcgj.7a5w-55vx", "00000000-0000-0000-A57C-73D52F179FB1", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.783427580554 37.247398787995)", "247", "Silver Leaf Park", "Park", null, null, null, "ESRI", "2522010POS", "<Null>", "37.247393840000001", "-121.78341451999999", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-a5vz.9vrh.cn9t", "00000000-0000-0000-BBE3-8FC020B1ED59", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.956916113849 37.403708894009)", "163", "Lick Mill Park", "Park", null, null, null, "ESRI", "1682010POS", "<Null>", "37.403703950000001", "-121.95690301", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-uxy6~5d3r_d9gk", "00000000-0000-0000-35CD-B8E53B25AF22", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.849303178154 37.25416806043)", "221", "Playa del Rey Park", "Park", null, null, null, "ESRI", "2262010POS", "<Null>", "37.254163120000001", "-121.84929011", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-8c2p-3sx3~9xyk", "00000000-0000-0000-4681-2A088A2A6E51", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.913071679026 37.442671976025)", "137", "Hall Memorial Park", "Park", null, null, null, "ESRI", "1422010POS", "<Null>", "37.442667020000002", "-121.91305858", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-6y28-7uvf-w237", "00000000-0000-0000-0E20-A5681D00B53F", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.976015160741 37.369410419544)", "60", "Bracher Park", "Park", null, null, null, "ESRI", "652010POS", "<Null>", "37.369405479999998", "-121.97600206", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-kr2p-ucq8.sfr5", "00000000-0000-0000-F494-5567AE4BAE7A", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.988954292449 37.330518794168)", "176", "Maywood Park", "Park", null, null, null, "ESRI", "1812010POS", "<Null>", "37.330513860000003", "-121.98894119000001", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-z6xv_4py4-qzf2", "00000000-0000-0000-69E4-CB8CB79DEA96", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.867525420079 37.42784343465)", "50", "Ben Rogers Park", "Park", null, null, null, "ESRI", "552010POS", "<Null>", "37.427838479999998", "-121.86751233", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-5crn_mwha_jqtu", "00000000-0000-0000-C5B3-27E48E0585BE", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.933656329981 37.264198449551)", "71", "Camden Park", "Park", null, null, null, "ESRI", "762010POS", "<Null>", "37.264193509999998", "-121.93364325", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-6jt6_smru_b59v", "00000000-0000-0000-B2E9-D6F90FE9A8E3", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.793595268064 37.296350969386)", "246", "Silver Creek Linear Park", "Park", null, null, null, "ESRI", "2512010POS", "<Null>", "37.296346020000001", "-121.7935822", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-sbcc-ahvs_25iu", "00000000-0000-0000-715A-F7F5A02BACE6", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.229647022763 37.044927011491)", "33", "Pacheco State Park", "Park", null, null, null, "SCC-Plannning", "352011POS", "<Null>", "37.044922049999997", "-121.22963407", 1315958400, "ISD - GIS", "Yes", "Leisure" ]
+              , [ "row-2iu3~ufhy~5f2r", "00000000-0000-0000-DD98-5288E026D2F2", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-122.062678594594 37.3258080324)", "265", "Varian Park", "Park", null, null, null, "ESRI", "2702010POS", "<Null>", "37.325803100000002", "-122.06266548000001", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-7vrs~ua6k~iqx8", "00000000-0000-0000-1146-946C14257E91", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.881166769599 37.39647869469)", "65", "Brooktree Park", "Park", null, null, null, "ESRI", "702010POS", "<Null>", "37.396473739999998", "-121.88115368", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-vie4-py95_a84y", "00000000-0000-0000-5CF0-9330B3BB502B", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-122.042918246215 37.391541267492)", "111", "Encinal Park", "Park", null, null, null, "ESRI", "1162010POS", "<Null>", "37.391536330000001", "-122.04290512999999", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-mkky~4qrd-6uhn", "00000000-0000-0000-3EE6-030FC4B5DD88", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-122.007344985683 37.361753971169)", "222", "Ponderosa Park", "Park", null, null, null, "ESRI", "2272010POS", "<Null>", "37.361749029999999", "-122.00733188", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-gi4h_psck.ij86", "00000000-0000-0000-7FAC-C2F718966C72", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.944595462468 37.354855175765)", "158", "Lafayette Park", "Park", null, null, null, "ESRI", "1632010POS", "<Null>", "37.354850229999997", "-121.94458237000001", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-u3ww_n2mm.nh6u", "00000000-0000-0000-1344-20FCA3B0608D", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.890012950782 37.271304643377)", "215", "Paul Moore Park", "Park", null, null, null, "ESRI", "2202010POS", "<Null>", "37.2712997", "-121.88999987", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-mksw~nzxv.a7sn", "00000000-0000-0000-839B-4B8401404CA0", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-122.16291680616 37.446263035397)", "124", "Gogswell Park", "Park", null, null, null, "ESRI", "1292010POS", "<Null>", "37.446258100000001", "-122.16290367000001", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-k7dk-3eya-ufug", "00000000-0000-0000-904E-4E0550DD28BC", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.623366222395 37.095375109465)", "28", "Silveira Property County Park", "Park", null, null, null, "SCCPRD", "282011POS", "<Null>", "37.095370170000002", "-121.6233532", 1315958400, "ISD - GIS", "YES", "Leisure" ]
+              , [ "row-v4mq.eseq_izy8", "00000000-0000-0000-E24A-69790552CD75", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.851981031911 37.344285985321)", "286", "Zolezzi Park", "Park", null, null, null, "ESRI", "2912010POS", "<Null>", "37.344281039999998", "-121.85196795", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-wbm4-ekue.9fak", "00000000-0000-0000-4E50-F667F61EB522", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.870918395238 37.221605996424)", "214", "Parma Park", "Park", null, null, null, "ESRI", "2192010POS", "<Null>", "37.221601059999998", "-121.87090533", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-cj68.2nfq~qgj4", "00000000-0000-0000-46B5-02CBF3A348CF", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.870376019242 37.238135456545)", "43", "Almaden Lake Park", "Park", null, null, null, "ESRI", "482010POS", "<Null>", "37.238130519999999", "-121.87036295", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-ynh5~qf28-exw8", "00000000-0000-0000-0E8E-976D2C5C84C0", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-122.109596448576 37.425991447491)", "227", "Ramos Park", "Park", null, null, null, "ESRI", "2322010POS", "<Null>", "37.425986510000001", "-122.10958332", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-f6kt_azkc_4f2w", "00000000-0000-0000-D3BF-B55538F3703C", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.864159709139 37.325469039627)", "139", "Happy Hollow Park", "Park", null, null, null, "ESRI", "1442010POS", "<Null>", "37.325464089999997", "-121.86414662999999", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-cqt3_r26h-kv2b", "00000000-0000-0000-7551-3AC03EE4CCB9", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-122.024934455992 37.302459292319)", "70", "Calabazas Park", "Park", null, null, null, "ESRI", "752010POS", "<Null>", "37.302454359999999", "-122.02492135", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-has7_ysa8_774z", "00000000-0000-0000-8DAA-312EBE9AA512", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.697324869916 37.008144010261)", "11", "Mt. Madonna County Park", "Park", null, null, null, "SCCPRD", "112011POS", "<Null>", "37.008139079999999", "-121.69731185000001", 1315958400, "ISD - GIS", "YES", "Leisure" ]
+              , [ "row-9vej~7ukh_xxv8", "00000000-0000-0000-D7B2-E9D0099810A8", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.582805652696 37.021896541588)", "184", "Miller Park", "Park", null, null, null, "ESRI", "1892010POS", "<Null>", "37.021891599999996", "-121.58279265", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-g2fp_6fk3.br6g", "00000000-0000-0000-B803-CB92DDBC28DB", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.909298204183 37.344141466655)", "134", "Guadalupe River Park", "Park", null, null, null, "ESRI", "1392010POS", "<Null>", "37.344136519999999", "-121.90928511", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-5sns-8b5f-kn5n", "00000000-0000-0000-7862-154754852136", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.94251454018 37.341942123705)", "35", "Washington Park", "Park", null, null, null, "ESRI", "402010POS", "<Null>", "37.341937180000002", "-121.94250144999999", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-5din_asqy~6p5t", "00000000-0000-0000-B1B6-4A818C22500D", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-122.090158353837 37.40134433981)", "230", "Rex Manor Park", "Park", null, null, null, "ESRI", "2352010POS", "<Null>", "37.401339399999998", "-122.09014523", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-ihxs_3yp5~zdzv", "00000000-0000-0000-ADA9-6461A0BCF510", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.835079584862 37.211549820133)", "77", "Carrabelle Park", "Park", null, null, null, "ESRI", "822010POS", "<Null>", "37.211544879999998", "-121.83506652", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-f6au~qx85~8pb3", "00000000-0000-0000-B518-BE084E098029", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.956367468977 37.28146960021)", "153", "John D Morgan Park", "Park", null, null, null, "ESRI", "1582010POS", "<Null>", "37.281464659999997", "-121.95635437999999", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-dmge-p5ft_qq6r", "00000000-0000-0000-BD8F-0980628B308B", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.889352267164 37.290130455345)", "164", "Lincoln Glen Park", "Park", null, null, null, "ESRI", "1692010POS", "<Null>", "37.290125510000003", "-121.88933919", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-fcka.4cpz-sxtj", "00000000-0000-0000-4508-39F55328ABDF", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-122.000297650574 37.331111605795)", "278", "Westwood Oak Park", "Park", null, null, null, "ESRI", "2832010POS", "<Null>", "37.331106669999997", "-122.00028455", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-79s5~8nzi-2bdw", "00000000-0000-0000-2ADC-8C2E22D41D2E", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.954494721742 37.245245072094)", "167", "Live Oak Manor Park", "Park", null, null, null, "ESRI", "1722010POS", "<Null>", "37.24524014", "-121.95448164", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-3mta-9crk_rwz8", "00000000-0000-0000-CD9F-036073CC80BD", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.767417244621 37.298216357324)", "114", "Evergreen Park", "Park", null, null, null, "ESRI", "1192010POS", "<Null>", "37.29821141", "-121.76740418", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-h3v2_jpns.jzi4", "00000000-0000-0000-A4C8-8FE6CBFC8A54", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-122.020510920473 37.326009752798)", "223", "Portal Park", "Park", null, null, null, "ESRI", "2282010POS", "<Null>", "37.326004820000001", "-122.02049782", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-qw27-7tzm.9huv", "00000000-0000-0000-F381-D038C75DA256", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-122.116706845707 37.408153451164)", "188", "Monroe Mini Park", "Park", null, null, null, "ESRI", "1932010POS", "<Null>", "37.408148519999997", "-122.11669372", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-n99k-vi73~gzjs", "00000000-0000-0000-BA38-C6C2FFBFF4D5", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-122.059077272975 37.331366815285)", "252", "Somerset Square Park", "Park", null, null, null, "ESRI", "2572010POS", "<Null>", "37.331361880000003", "-122.05906416000001", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-694i.pbd9_x26z", "00000000-0000-0000-2543-47B7C0041052", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.861449642478 37.45758973538)", "5", "Ed R. Levin County Park", "Park", null, null, null, "SCCPRD", "52011POS", "<Null>", "37.457584779999998", "-121.86143654999999", 1315958400, "ISD - GIS", "YES", "Leisure" ]
+              , [ "row-52ex.z9ur-dgdx", "00000000-0000-0000-32F3-B0AF8EFD8C3C", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-122.063134653145 37.381654525577)", "257", "Sylvan Park", "Park", null, null, null, "ESRI", "2622010POS", "<Null>", "37.381649590000002", "-122.06312154", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-mmbq-irk6.ap9z", "00000000-0000-0000-296A-9646DCC143C6", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.854824771595 37.36453931099)", "206", "Overfelt Gardens Park", "Park", null, null, null, "ESRI", "2112010POS", "<Null>", "37.36453436", "-121.85481169000001", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-kwvp_upf4_s9py", "00000000-0000-0000-8709-6743C1E5FCF9", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-122.026370471819 37.381893968341)", "171", "Martin Murphy Jr Park", "Park", null, null, null, "ESRI", "1762010POS", "<Null>", "37.381889030000004", "-122.02635736000001", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-zchz~8bxq_fd9i", "00000000-0000-0000-2BC7-CD40AEA11221", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.999108760502 37.302904207882)", "197", "Murdock Park", "Park", null, null, null, "ESRI", "2022010POS", "<Null>", "37.302899269999998", "-121.99909565999999", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-859y-kitb~t5rv", "00000000-0000-0000-BB4C-D0AAE499E311", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.882729623935 37.380930026519)", "264", "Townsend Park", "Park", null, null, null, "ESRI", "2692010POS", "<Null>", "37.380925079999997", "-121.88271653", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-9cy7.7tst.kadt", "00000000-0000-0000-2215-40A566390966", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-122.061927325368 37.393102353199)", "250", "Slater School Park", "Park", null, null, null, "ESRI", "2552010POS", "<Null>", "37.393097419999997", "-122.06191421", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-yk9b~bmu8.nj8m", "00000000-0000-0000-D5CE-23D12D23B0D2", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.727104853599 37.219046165663)", "18", "Field Sports Park County Park", "Park", null, null, null, "SCCPRD", "182011POS", "<Null>", "37.219041220000001", "-121.72709181", 1315958400, "ISD - GIS", "YES", "Leisure" ]
+              , [ "row-aeum_dxkk.gtd3", "00000000-0000-0000-2DA2-3D2D253D6696", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.592465926089 37.002205112753)", "27", "Uvas Creek Park Preserve County Park", "Park", null, null, null, "SCCPRD", "272011POS", "<Null>", "37.002200180000003", "-121.59245292", 1315958400, "ISD - GIS", "YES", "Leisure" ]
+              , [ "row-4gdz~2ziw_equ2", "00000000-0000-0000-58D8-ACA406978A6C", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-122.007935550244 37.300864356922)", "225", "Rainbow Park", "Park", null, null, null, "ESRI", "2302010POS", "<Null>", "37.300859420000002", "-122.00792245", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-qvu3-rwuj.emqp", "00000000-0000-0000-564C-56A20A680475", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.902956372359 37.273034374676)", "156", "Kirk Park", "Park", null, null, null, "ESRI", "1612010POS", "<Null>", "37.273029440000002", "-121.90294329", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-pimk_qanf_y2mj", "00000000-0000-0000-9F3F-170B063A1839", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.896638116589 37.342086484466)", "235", "Ryland Park", "Park", null, null, null, "ESRI", "2402010POS", "<Null>", "37.342081540000002", "-121.89662503", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-3i86_ngzc~btrz", "00000000-0000-0000-5796-89B09DA2C157", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-122.142312844305 37.45001174162)", "110", "Eleanor Pardee Park", "Park", null, null, null, "ESRI", "1152010POS", "<Null>", "37.450006799999997", "-122.14229971", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-fhdb~8tfi_wpp6", "00000000-0000-0000-B204-D4E7B68328C7", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-122.088468584105 37.275718798407)", "12", "Stevens Creek County Park", "Park", null, null, null, "SCCPRD", "122011POS", "<Null>", "37.275713869999997", "-122.08845547", 1315958400, "ISD - GIS", "YES", "Leisure" ]
+              , [ "row-s8h4-m7x4.n5v7", "00000000-0000-0000-ED11-806C585945AF", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-122.020875088649 37.39437938156)", "84", "Columbia Park", "Park", null, null, null, "ESRI", "892010POS", "<Null>", "37.39437444", "-122.02086198000001", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-z5qy-8vcs~bb7b", "00000000-0000-0000-C472-A0D3BD987B39", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.82434712241 37.325833225583)", "276", "Welch Park", "Park", null, null, null, "ESRI", "2812010POS", "<Null>", "37.325828280000003", "-121.82433405", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-8krj-wfcf.26pt", "00000000-0000-0000-D20C-8E14AA785A8F", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-122.060591451044 37.307537842117)", "166", "Linda Vista Park", "Park", null, null, null, "ESRI", "1712010POS", "<Null>", "37.307532909999999", "-122.06057834000001", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-wz3g_yjv3~gyrm", "00000000-0000-0000-8F59-19B25E1347BC", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.965840998829 37.244864258641)", "7", "Vasona County Park", "Park", null, null, null, "SCCPRD", "72011POS", "<Null>", "37.244859329999997", "-121.96582791", 1315958400, "ISD - GIS", "YES", "Leisure" ]
+              , [ "row-7mpj_p4u5_p58m", "00000000-0000-0000-5611-DB8A2C510BBC", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-122.041636978818 37.37765007697)", "272", "Washington City Park", "Park", null, null, null, "ESRI", "2772010POS", "<Null>", "37.377645139999998", "-122.04162387", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-trhc-y2ik-g7s4", "00000000-0000-0000-BBD0-326A29CD1BA1", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-122.105087425417 37.371636790307)", "89", "Covington Mini Park", "Park", null, null, null, "ESRI", "942010POS", "<Null>", "37.371631860000001", "-122.1050743", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-z6z4-zech-3eek", "00000000-0000-0000-972E-AED26D73DE0D", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.895457551604 37.437726930082)", "217", "Peter T Gill Park", "Park", null, null, null, "ESRI", "2222010POS", "<Null>", "37.437721979999999", "-121.89544445", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-gybr.tsfy.uezj", "00000000-0000-0000-D3C0-46151C87DF63", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-122.069854316517 37.318463389674)", "190", "Monta Vista Park", "Park", null, null, null, "ESRI", "1952010POS", "<Null>", "37.318458460000002", "-122.06984121000001", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-cnh4.mjy6~5y6i", "00000000-0000-0000-5A57-CEDA485042D0", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.908181779117 37.345095351284)", "85", "Columbus Park", "Park", null, null, null, "ESRI", "902010POS", "<Null>", "37.345090409999997", "-121.90816869", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-xj35~bw8p_j2yr", "00000000-0000-0000-4CB3-DCB0B62529BA", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.938789800138 37.286567309533)", "73", "Campbell Park", "Park", null, null, null, "ESRI", "782010POS", "<Null>", "37.286562369999999", "-121.93877671", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-9xk3_dwsm_pnz3", "00000000-0000-0000-4299-EEC65219E68F", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-122.006058643559 37.344080205917)", "228", "Raynor Park", "Park", null, null, null, "ESRI", "2332010POS", "<Null>", "37.344075269999998", "-122.00604554", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-arzz-rr4e.vagv", "00000000-0000-0000-FEAE-084241E036DD", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.941168533144 37.366715913918)", "183", "Memorial Cross Park", "Park", null, null, null, "ESRI", "1882010POS", "<Null>", "37.36671097", "-121.94115544", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-a77m-yxhy~aay3", "00000000-0000-0000-4F95-1253643FFC02", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.648565167825 37.114032332568)", "39", "Community Park", "Park", null, null, null, "ESRI", "442010POS", "<Null>", "37.114027389999997", "-121.64855214000001", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-wy5n-npxt_knde", "00000000-0000-0000-56EE-8B2D944E8661", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.812704028014 37.295710181838)", "226", "Ramblewood Park", "Park", null, null, null, "ESRI", "2312010POS", "<Null>", "37.295705230000003", "-121.81269096", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-x82h.mchp-mmu8", "00000000-0000-0000-AF1A-C7CFE0C78C16", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-122.118073889879 37.435024221023)", "243", "Seale Park", "Park", null, null, null, "ESRI", "2482010POS", "<Null>", "37.435019279999999", "-122.11806076000001", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-7nxy-8vua_a796", "00000000-0000-0000-29F4-B07933711F50", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-122.143624362429 37.444114785672)", "231", "Rinconada Park", "Park", null, null, null, "ESRI", "2362010POS", "<Null>", "37.444109849999997", "-122.14361123", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-axsf-t3u4~twak", "00000000-0000-0000-DCE6-8EFAC1FEE5CD", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-122.083240167528 37.342018693387)", "192", "Montclair Park", "Park", null, null, null, "ESRI", "1972010POS", "<Null>", "37.34201376", "-122.08322705", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-nm9n.pv76-46av", "00000000-0000-0000-E01D-5645C1E015E1", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.854867028944 37.278389704686)", "273", "Waterford Park", "Park", null, null, null, "ESRI", "2782010POS", "<Null>", "37.278384760000002", "-121.85485396", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-qdbp-rmsf_buzv", "00000000-0000-0000-8095-E59F8DF8F2C4", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.995497931202 37.413992616667)", "31", "Sunnyvale Baylands County Park", "Park", null, null, null, "SCCPRD", "312011POS", "<Null>", "37.413987669999997", "-121.99548482", 1315958400, "ISD - GIS", "YES", "Leisure" ]
+              , [ "row-uw2e~e99j-5fah", "00000000-0000-0000-4358-7A8506805A71", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.902320882236 37.444973247259)", "256", "Strickroth Park", "Park", null, null, null, "ESRI", "2612010POS", "<Null>", "37.444968289999998", "-121.90230778", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-xf66-36iy-epw3", "00000000-0000-0000-45FB-6B3C56A7295F", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.84781010726 37.390646527303)", "6", "Penitencia Creek County Park", "Park", null, null, null, "SCCPRD", "62011POS", "<Null>", "37.39064157", "-121.84779702", 1315958400, "ISD - GIS", "YES", "Leisure" ]
+              , [ "row-8pg2~q3zv.fxjb", "00000000-0000-0000-BF55-0CAB7D4BCD3D", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.956575568149 37.333361261047)", "45", "Alvarez Park", "Park", null, null, null, "ESRI", "502010POS", "<Null>", "37.33335632", "-121.95656246999999", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-nk99~tbzb~4wi2", "00000000-0000-0000-BAD4-4C841D2B2789", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-122.063133625407 37.31425539426)", "177", "McClellan Ranch Park", "Park", null, null, null, "ESRI", "1822010POS", "<Null>", "37.314250459999997", "-122.06312052", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-jfh6_3wt9~zici", "00000000-0000-0000-86CF-40B9B9D0DB44", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.960369138465 37.336266630858)", "141", "Henery Schmidt Park", "Park", null, null, null, "ESRI", "1462010POS", "<Null>", "37.336261690000001", "-121.96035603999999", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-4n38.mca9_m38p", "00000000-0000-0000-697F-67A6C88CD372", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-122.117742119507 37.375272550751)", "245", "Shoup Park", "Park", null, null, null, "ESRI", "2502010POS", "<Null>", "37.375267620000002", "-122.117729", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-g746-brq2_nq4k", "00000000-0000-0000-6490-1E12C8510032", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.911025221085 37.245687932175)", "169", "Lone Hill Park", "Park", null, null, null, "ESRI", "1742010POS", "<Null>", "37.245683", "-121.91101214", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-v9kz.3t6u.9sh2", "00000000-0000-0000-9274-0537F134A4CA", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.89988796364 37.294076678873)", "280", "Wilcox Park", "Park", null, null, null, "ESRI", "2852010POS", "<Null>", "37.29407174", "-121.89987488", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-26ni_8qvx.n49p", "00000000-0000-0000-61C7-C14957B1B426", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.968797603097 37.425234045987)", "46", "Alviso Park", "Park", null, null, null, "ESRI", "512010POS", "<Null>", "37.425229100000003", "-121.9687845", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-n4bh-4zmy_6efn", "00000000-0000-0000-CEDE-54F907EA273D", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.992851497126 37.309247340672)", "135", "Gullo Park", "Park", null, null, null, "ESRI", "1402010POS", "<Null>", "37.309242410000003", "-121.9928384", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-76fu_mix8-gquy", "00000000-0000-0000-E74F-1AFFAF4E9B59", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.906787499083 37.253219263184)", "62", "Branham Lane Park", "Park", null, null, null, "ESRI", "672010POS", "<Null>", "37.253214329999999", "-121.90677442", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-5d9w_hfez-cys3", "00000000-0000-0000-4C26-DA0106E6EF1A", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.783134300195 37.172239476184)", "29", "Calero County Park", "Park", null, null, null, "SCCPRD", "292011POS", "<Null>", "37.172234539999998", "-121.78312124999999", 1315958400, "ISD - GIS", "YES", "Leisure" ]
+              , [ "row-dp7r_nibh-knt2", "00000000-0000-0000-20A4-A3D02A3AC0BD", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-122.154174527835 37.420023342404)", "277", "Werry Park", "Park", null, null, null, "ESRI", "2822010POS", "<Null>", "37.420018409999997", "-122.15416139", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-3r5q~nm3p-mbui", "00000000-0000-0000-5EED-F500CC9C3161", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-122.12881515836 37.430281835752)", "148", "Hoover Park", "Park", null, null, null, "ESRI", "1532010POS", "<Null>", "37.430276900000003", "-122.12880203", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-td26~yi9b_eexw", "00000000-0000-0000-EDF1-CAEA75B56791", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.84538589899 37.201390639521)", "81", "Cathedral Park", "Park", null, null, null, "ESRI", "862010POS", "<Null>", "37.201385700000003", "-121.84537283", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-3xgw~uxvy~yrfb", "00000000-0000-0000-15A8-DE1995AF0FE3", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.837768833865 37.269024012886)", "212", "Parkview Park Three", "Park", null, null, null, "ESRI", "2172010POS", "<Null>", "37.269019069999999", "-121.83775575999999", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-a8xx~n4mg.vui9", "00000000-0000-0000-7EBD-55C5C2BB3438", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.976507991706 37.341345386124)", "36", "Central Park", "Park", null, null, null, "ESRI", "412010POS", "<Null>", "37.341340449999997", "-121.97649489", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-5dcx~kdwz~yyfh", "00000000-0000-0000-0A02-344F2384D21E", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.87068739715 37.402055270992)", "80", "Cataldi Park", "Park", null, null, null, "ESRI", "852010POS", "<Null>", "37.402050320000001", "-121.87067431", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-mn2a.ff2k_scdf", "00000000-0000-0000-CA2E-EE762362C630", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.801157733667 37.397773872207)", "289", "Alum Rock Park", "Park", null, null, null, "ESRI", "3102010POS", "<Null>", "37.397768919999997", "-121.80114465", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-vzqj~3afy_8u2b", "00000000-0000-0000-DC0C-B1A5168D89C6", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-122.043891078955 37.325848206926)", "38", "Memorial Park", "Park", null, null, null, "ESRI", "432010POS", "<Null>", "37.32584327", "-122.04387797", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-tk8i-m8gm.upwv", "00000000-0000-0000-FCE1-D936F069533C", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.863653762952 37.335545881303)", "172", "Martin Park", "Park", null, null, null, "ESRI", "1772010POS", "<Null>", "37.335540930000001", "-121.86364068", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-kv6e.e39t~3ah2", "00000000-0000-0000-BAD4-F7F68CEB5043", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-122.087920161739 37.330829029874)", "21", "Rancho San Antonio County Park", "Park", null, null, null, "SCCPRD", "212011POS", "<Null>", "37.330824100000001", "-122.08790705", 1315958400, "ISD - GIS", "YES", "Leisure" ]
+              , [ "row-9cs8-u7dc_kg82", "00000000-0000-0000-3F25-373E456F1A5A", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.811188682959 37.280402108303)", "26", "Hellyer County Park", "Park", null, null, null, "SCCPRD", "262011POS", "<Null>", "37.28039716", "-121.81117562", 1315958400, "ISD - GIS", "YES", "Leisure" ]
+              , [ "row-zzrm_3rdm.2np8", "00000000-0000-0000-02F6-1DEDF046E245", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.978917000615 37.430434163335)", "16", "Alviso Marina County Park", "Park", null, null, null, "SCCPRD", "162011POS", "<Null>", "37.430429220000001", "-121.97890389", 1315958400, "ISD - GIS", "YES", "Leisure" ]
+              , [ "row-p83d~vs2a.kesv", "00000000-0000-0000-01A6-4BB20C804964", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.797724070623 37.315712725123)", "40", "Aborn Park", "Park", null, null, null, "ESRI", "452010POS", "<Null>", "37.315707770000003", "-121.79771100000001", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-gd75_8cb6-dzrn", "00000000-0000-0000-CBE8-DF91A86D0A12", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.823839953883 37.272893012107)", "95", "Danna Rock Park", "Park", null, null, null, "ESRI", "1002010POS", "<Null>", "37.27288807", "-121.82382689000001", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-xv22-3t8c_33m4", "00000000-0000-0000-9050-66CA8356D1E6", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.944719835294 37.347505006903)", "37", "City Park", "Park", null, null, null, "ESRI", "422010POS", "<Null>", "37.347500060000002", "-121.94470674", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-qgmd~nnx6~up5t", "00000000-0000-0000-8DF2-889771C68576", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.84644157182 37.340705794402)", "224", "Prusch Park", "Park", null, null, null, "ESRI", "2292010POS", "<Null>", "37.340700849999998", "-121.84642848999999", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-qxs8-nnnh_86vm", "00000000-0000-0000-AF1D-56D47FEBE7D3", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.688650053927 37.181634452681)", "24", "Coyote Creek Parkway County Park - South", "Park", null, null, null, "SCCPRD", "242011POS", "<Null>", "37.18162951", "-121.68863702", 1315958400, "ISD - GIS", "YES", "Leisure" ]
+              , [ "row-jji9.zhgd.fctw", "00000000-0000-0000-F4F5-33B8EAE76F71", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-122.079593258775 37.352748241394)", "174", "Marymead Park", "Park", null, null, null, "ESRI", "1792010POS", "<Null>", "37.352743310000001", "-122.07958014", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-5uaz~jwtt-pqkj", "00000000-0000-0000-C663-9BA6EED35C0A", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.660837630698 37.128505652886)", "121", "Galvin Park", "Park", null, null, null, "ESRI", "1262010POS", "<Null>", "37.128500709999997", "-121.6608246", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-dd6x~wfbe-66km", "00000000-0000-0000-25CA-6DD21D9C44DB", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.756917328365 37.302387612902)", "193", "Montgomery Hill Park", "Park", null, null, null, "ESRI", "1982010POS", "<Null>", "37.302382659999999", "-121.75690427000001", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-qbeg.9w4e_a9cn", "00000000-0000-0000-F9F1-515AFA1F7A3D", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.976157232096 37.266150279841)", "150", "Jack Fischer Park", "Park", null, null, null, "ESRI", "1552010POS", "<Null>", "37.266145350000002", "-121.97614414", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-9zks_7v7a~7p8b", "00000000-0000-0000-E363-8EE5798621C1", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.778501482658 37.336431654078)", "131", "Groesbeck Hill Park", "Park", null, null, null, "ESRI", "1362010POS", "<Null>", "37.336426699999997", "-121.77848840999999", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-ur43~5xhn-itps", "00000000-0000-0000-EF42-730129C0F824", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.895227138671 37.319633675178)", "53", "Biebrach Park", "Park", null, null, null, "ESRI", "582010POS", "<Null>", "37.319628729999998", "-121.89521405000001", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-b52t.nqw4-5wnz", "00000000-0000-0000-6B7B-CC07B148AF38", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.909434818053 37.303689847032)", "283", "Willow St Bramhall Park", "Park", null, null, null, "ESRI", "2882010POS", "<Null>", "37.303684910000001", "-121.90942173000001", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-3v7c-5uys~huz5", "00000000-0000-0000-2C89-CD73EC29C368", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.916027285131 37.259952325937)", "67", "Butcher Park", "Park", null, null, null, "ESRI", "722010POS", "<Null>", "37.259947390000001", "-121.91601420000001", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-w2t2~z3z5_5nma", "00000000-0000-0000-8A14-1939B552483C", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.849922769809 37.342468448415)", "207", "P A L Sports Center", "Park", null, null, null, "ESRI", "2122010POS", "<Null>", "37.342463500000001", "-121.84990969", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-qq6i~g8fe.f84v", "00000000-0000-0000-D1B6-0DF8E5A7C3E8", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.841312948744 37.394379657885)", "199", "Noble Park", "Park", null, null, null, "ESRI", "2042010POS", "<Null>", "37.3943747", "-121.84129986000001", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-7df2~3z5e.dqae", "00000000-0000-0000-021A-8DE765409500", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-122.184795570543 37.351729454254)", "209", "Palo Alto Foothills Park", "Park", null, null, null, "ESRI", "2142010POS", "<Null>", "37.351724529999998", "-122.18478244000001", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-abqi~ujge.mqdz", "00000000-0000-0000-3BFC-D2C9337C2F00", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-122.022932553063 37.399399102295)", "204", "Orchard Gardens Park", "Park", null, null, null, "ESRI", "2092010POS", "<Null>", "37.39939416", "-122.02291944", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-785a.t6kr.tg7p", "00000000-0000-0000-73E5-68A7628E318E", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-122.019836323093 37.288067232734)", "194", "Morin Park", "Park", null, null, null, "ESRI", "1992010POS", "<Null>", "37.2880623", "-122.01982322000001", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-yjxq.jtza_tsyf", "00000000-0000-0000-23A5-676309AB7FFE", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-122.00720286424 37.283115844587)", "64", "Brookglen Park", "Park", null, null, null, "ESRI", "692010POS", "<Null>", "37.283110909999998", "-122.00718977", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-wpnb~7hs6-yyit", "00000000-0000-0000-0A30-2A9F234F0DE2", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.851328011991 37.206117517927)", "123", "Glenview Park", "Park", null, null, null, "ESRI", "1282010POS", "<Null>", "37.206112580000003", "-121.85131495", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-qw7h~tckn_pxgk", "00000000-0000-0000-58E1-BB26CB5A4634", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.794383748233 37.237786635703)", "100", "Doctor George Page Park", "Park", null, null, null, "ESRI", "1052010POS", "<Null>", "37.237781689999998", "-121.79437068999999", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-dt3f.yxmy_cqen", "00000000-0000-0000-5B73-B5836A614576", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.875260813441 37.26824653043)", "263", "Thousand Oaks Park", "Park", null, null, null, "ESRI", "2682010POS", "<Null>", "37.268241590000002", "-121.87524774000001", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-3pma-89sq.fpbe", "00000000-0000-0000-937E-3F63C0448D29", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.891710487283 37.243562365927)", "96", "De Anza Park", "Park", null, null, null, "ESRI", "1012010POS", "<Null>", "37.243557430000003", "-121.89169741000001", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-iqig~fz6e.biwm", "00000000-0000-0000-68B7-F2770644DF1E", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.564776139887 37.006651066107)", "119", "Forest Street Park", "Park", null, null, null, "ESRI", "1242010POS", "<Null>", "37.00664613", "-121.56476314", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-aqny.k426~r4yj", "00000000-0000-0000-1B31-1DC11ABAE284", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-122.142862046045 37.425798267708)", "269", "Wallis Park", "Park", null, null, null, "ESRI", "2742010POS", "<Null>", "37.425793329999998", "-122.14284891", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-rtyx_jtbh_p9f6", "00000000-0000-0000-EC24-3D671A468356", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.818723490077 37.25941427003)", "82", "Chynoweth Park", "Park", null, null, null, "ESRI", "872010POS", "<Null>", "37.259409329999997", "-121.81871042", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-e4ai~m3xq_fd4g", "00000000-0000-0000-CA10-1234FDA49A64", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.759156717904 37.243583648177)", "49", "Basking Ridge Park", "Park", null, null, null, "ESRI", "542010POS", "<Null>", "37.2435787", "-121.75914366000001", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-5d7m_trp6~3ceu", "00000000-0000-0000-4805-8A29F80D78D3", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-122.025500001686 37.342150140347)", "205", "Ortega Park", "Park", null, null, null, "ESRI", "2102010POS", "<Null>", "37.342145199999997", "-122.0254869", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-63tb-bfnr.cu6n", "00000000-0000-0000-A153-489B5C5AE1DA", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.884335581671 37.221773991768)", "44", "Almaden Meadows Park", "Park", null, null, null, "ESRI", "492010POS", "<Null>", "37.22176906", "-121.88432251", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-as6d~dna5.sva3", "00000000-0000-0000-FAA7-367ED763B0BF", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-122.093927410806 37.394093274412)", "79", "Castro School Park", "Park", null, null, null, "ESRI", "842010POS", "<Null>", "37.394088340000003", "-122.09391429", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-b46g.9msj_8eet", "00000000-0000-0000-2CE3-76E763B7262E", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.884443004158 37.35225726229)", "48", "Backesto Park", "Park", null, null, null, "ESRI", "532010POS", "<Null>", "37.352252319999998", "-121.88442992", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-p2eg-t2vb.z9jx", "00000000-0000-0000-F7D1-48D0228E5C49", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.83976117663 37.262529754708)", "30", "Martial Cottle County Park", "Park", null, null, null, "SCCPRD", "302011POS", "<Null>", "37.262524810000002", "-121.83974811", 1315958400, "ISD - GIS", "YES", "Leisure" ]
+              , [ "row-urix-gktq-qdmr", "00000000-0000-0000-081E-8D50031347DC", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.780247362564 37.314250427021)", "259", "Tapestry Park", "Park", null, null, null, "ESRI", "2642010POS", "<Null>", "37.314245479999997", "-121.7802343", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-dyqg-jmi8.qgcb", "00000000-0000-0000-9C5E-E4B04F46DE1E", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.88420761847 37.441627996095)", "76", "Cardoza Park", "Park", null, null, null, "ESRI", "812010POS", "<Null>", "37.441623040000003", "-121.88419451999999", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-m2m7-yaif.2vev", "00000000-0000-0000-3654-9F04C3E455A4", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.964246960165 37.356758866642)", "271", "Warburton Park", "Park", null, null, null, "ESRI", "2762010POS", "<Null>", "37.356753920000003", "-121.96423385999999", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-cub2-kdjv_5rg7", "00000000-0000-0000-0E46-B762B00AFB00", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.585280215274 37.005858035738)", "109", "El Roble Park", "Park", null, null, null, "ESRI", "1142010POS", "<Null>", "37.005853100000003", "-121.58526721", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-hhm8_2p32_6vhm", "00000000-0000-0000-0CD0-7CE505543194", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-122.16780200275 37.444755588924)", "107", "El Camino Park", "Park", null, null, null, "ESRI", "1122010POS", "<Null>", "37.444750650000003", "-122.16778886", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-7rmx-mmmd.rkby", "00000000-0000-0000-87C4-9B70235578B3", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-122.083221130667 37.389610174912)", "219", "Pioneer Memorial Park", "Park", null, null, null, "ESRI", "2242010POS", "<Null>", "37.389605240000002", "-122.08320801000001", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-8v3a~h4xm_6kx8", "00000000-0000-0000-B554-3091CFC3CA49", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.844894513124 37.351049647146)", "175", "Mayfair Park", "Park", null, null, null, "ESRI", "1802010POS", "<Null>", "37.351044700000003", "-121.84488143", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-n9v5_4waa-s47i", "00000000-0000-0000-1BAB-A039F96F704D", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-122.08394089117 37.230268502383)", "1", "Sanborn County Park", "Park", null, null, null, "SCCPRD", "12011POS", "<Null>", "37.230263579999999", "-122.08392779", 1315958400, "ISD - GIS", "YES", "Leisure" ]
+              , [ "row-4h5m.pffg~4dw4", "00000000-0000-0000-E005-BFC2766BA5B4", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.892488515834 37.376858877805)", "201", "North Coyote Park", "Park", null, null, null, "ESRI", "2062010POS", "<Null>", "37.376853930000003", "-121.89247543", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-vcfg-btur~mg3e", "00000000-0000-0000-1B1B-B76DA5C72D5B", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.810496145772 37.356383873696)", "195", "Mount Pleasant Park", "Park", null, null, null, "ESRI", "2002010POS", "<Null>", "37.356378919999997", "-121.81048307", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-k6qa_macy-5ps3", "00000000-0000-0000-C7B5-48D57E326D5A", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.880955900276 37.422752818484)", "92", "Creighton Park", "Park", null, null, null, "ESRI", "972010POS", "<Null>", "37.422747860000001", "-121.88094280999999", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-f33c_uwnf_64j2", "00000000-0000-0000-14E9-623E0F2D4B9E", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.787627136263 37.322187354775)", "288", "Brigadoon Park", "Park", null, null, null, "ESRI", "2932010POS", "<Null>", "37.322182400000003", "-121.78761407", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-mhgu.hf7q-4k39", "00000000-0000-0000-D23F-B3C99CA1FAD5", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.877294361792 37.285098378422)", "74", "Canoas Park", "Park", null, null, null, "ESRI", "792010POS", "<Null>", "37.285093439999997", "-121.87728128000001", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-fqwz.9c6d.5rjs", "00000000-0000-0000-D31D-B1061ED7A003", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.915278744121 37.430745308615)", "254", "Starlite Park", "Park", null, null, null, "ESRI", "2592010POS", "<Null>", "37.430740360000001", "-121.91526564", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-9xnp~fzmi~es56", "00000000-0000-0000-324F-A08519A94A3F", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.944887586269 37.388219776211)", "191", "Montague Park", "Park", null, null, null, "ESRI", "1962010POS", "<Null>", "37.388214830000003", "-121.94487449", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-u2z3.wsfq.u73a", "00000000-0000-0000-09BB-6122D8BB89F8", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.945057327606 37.317817326409)", "241", "Santana Park", "Park", null, null, null, "ESRI", "2462010POS", "<Null>", "37.31781239", "-121.94504424", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-wia8.2da8~dke7", "00000000-0000-0000-34A3-E3AF68AF7FC2", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-122.044226173857 37.344393632169)", "244", "Serra Park", "Park", null, null, null, "ESRI", "2492010POS", "<Null>", "37.344388700000003", "-122.04421306", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-5bes-rmak_zrt9", "00000000-0000-0000-7AAF-24FF6C8EF8BA", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.951241351396 37.350254593378)", "120", "Fremont Park", "Park", null, null, null, "ESRI", "1252010POS", "<Null>", "37.350249650000002", "-121.95122825", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-ue7c_tfj9~ej8s", "00000000-0000-0000-7ACB-F2C8F6522326", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.874865598283 37.357802433741)", "274", "Watson Park", "Park", null, null, null, "ESRI", "2792010POS", "<Null>", "37.357797490000003", "-121.87485251", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-zxac.3np6_zy44", "00000000-0000-0000-889A-A56E7618720C", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-122.119403857486 37.44291113166)", "130", "Greer Park", "Park", null, null, null, "ESRI", "1352010POS", "<Null>", "37.442906190000002", "-122.11939073000001", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-aruq.emdt_i4k2", "00000000-0000-0000-5C23-A9EEC86EE34F", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-122.081414353129 37.372234687075)", "94", "Cuesta Park", "Park", null, null, null, "ESRI", "992010POS", "<Null>", "37.372229750000002", "-122.08140123", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-hyxf_n9m3.xhr7", "00000000-0000-0000-C407-060875CF9C45", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.887503789023 37.301813488267)", "232", "River Glen Park", "Park", null, null, null, "ESRI", "2372010POS", "<Null>", "37.301808549999997", "-121.88749070999999", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-ap2v_niuq.u6qe", "00000000-0000-0000-7E13-EADBE8F233F9", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.83476272595 37.213315134714)", "248", "Singer Park", "Park", null, null, null, "ESRI", "2532010POS", "<Null>", "37.213310200000002", "-121.83474966", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-wsb5-vbnd.2rgb", "00000000-0000-0000-9ADC-6887FD336E03", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.838301011923 37.358556902917)", "168", "Lo Bue Park", "Park", null, null, null, "ESRI", "1732010POS", "<Null>", "37.358551949999999", "-121.83828793000001", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-r8rn~cm27.xhf9", "00000000-0000-0000-175A-754ED46CF3B9", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.954985550042 37.356551744053)", "34", "Rotary Park", "Park", null, null, null, "ESRI", "392010POS", "<Null>", "37.356546799999997", "-121.95497245", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-ayuc-h9m6_wes8", "00000000-0000-0000-3BFE-979C910395AF", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-122.070381210488 37.34587740211)", "127", "Grant Park", "Park", null, null, null, "ESRI", "1322010POS", "<Null>", "37.345872470000003", "-122.0703681", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-ep2u-nyyg~4d8r", "00000000-0000-0000-9D27-16DED09EA197", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-122.122314576345 37.415439230551)", "233", "Robles Park", "Park", null, null, null, "ESRI", "2382010POS", "<Null>", "37.41543429", "-122.12230144999999", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-75kg~byrz~nruc", "00000000-0000-0000-150F-F09711E51B1D", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.907300010614 37.34397219022)", "144", "Heritage Rose Garden", "Park", null, null, null, "ESRI", "1492010POS", "<Null>", "37.343967249999999", "-121.90728692", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-zg2v-6u8y.py39", "00000000-0000-0000-39A1-7023018DE8C4", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-122.014479950131 37.385514441962)", "115", "Fair Oaks Park", "Park", null, null, null, "ESRI", "1202010POS", "<Null>", "37.385509499999998", "-122.01446684", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-7bgu.bp4s.aiap", "00000000-0000-0000-406D-79C60C4CB0A8", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.853226060059 37.185905752634)", "4", "Almaden Quicksilver County Park", "Park", null, null, null, "SCCPRD", "42011POS", "<Null>", "37.185900820000001", "-121.853213", 1315958400, "ISD - GIS", "YES", "Leisure" ]
+              , [ "row-ks55.kkp7_t2u3", "00000000-0000-0000-B58A-AE4631D1B009", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-122.037574484659 37.301914874967)", "103", "Three Oaks Park", "Park", null, null, null, "ESRI", "1082010POS", "<Null>", "37.301909940000002", "-122.03756138", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-p3y9.hpwc.4zz9", "00000000-0000-0000-7AD2-6C09BC8B411E", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.808185299275 37.240675887854)", "208", "Palmia Park", "Park", null, null, null, "ESRI", "2132010POS", "<Null>", "37.240670940000001", "-121.80817224", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-652f~588e.khf7", "00000000-0000-0000-3980-EABD68FC39E5", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-122.040498740768 37.31041309401)", "155", "Jollyman Park", "Park", null, null, null, "ESRI", "1602010POS", "<Null>", "37.310408160000001", "-122.04048564", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-8ftq.3qiq-tqfi", "00000000-0000-0000-5B9C-138392754FFF", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.875422542831 37.423732370731)", "285", "Yellowstone Park", "Park", null, null, null, "ESRI", "2902010POS", "<Null>", "37.423727419999999", "-121.87540945000001", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-w355-ygku~2t5j", "00000000-0000-0000-DF7E-72A20B135057", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-122.070207748653 37.387456644418)", "161", "Landels School Park", "Park", null, null, null, "ESRI", "1662010POS", "<Null>", "37.387451710000001", "-122.07019463", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-dt2b.qcg4.t3az", "00000000-0000-0000-8CC3-6EB272CC3DF4", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-122.00365381503 37.326563812544)", "152", "Jenny Strand Park", "Park", null, null, null, "ESRI", "1572010POS", "<Null>", "37.32655888", "-122.00364071", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-w4cm.7w9t-pgs8", "00000000-0000-0000-F9E8-DA553A7D1D85", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.550209079252 37.096008968389)", "10", "Coyote Lake-Harvey Bear Ranch County Park", "Park", null, null, null, "SCCPRD", "102011POS", "<Null>", "37.096004020000002", "-121.55019607", 1315958400, "ISD - GIS", "YES", "Leisure" ]
+              , [ "row-hwmf.pwxy~eq24", "00000000-0000-0000-DC77-BBF2F8E9ED02", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-122.038090816796 37.364503032854)", "162", "Las Palmas Park", "Park", null, null, null, "ESRI", "1672010POS", "<Null>", "37.364498099999999", "-122.03807771", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-9ehi.4a8a.u2sx", "00000000-0000-0000-E4C0-070443944F54", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.982216887697 37.336030306945)", "147", "Homeridge Park", "Park", null, null, null, "ESRI", "1522010POS", "<Null>", "37.336025370000002", "-121.98220379", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-deaz-ukma_643p", "00000000-0000-0000-16CD-2C5CAD1011FE", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.896843868797 37.458410790924)", "145", "Higuera Adobe Park", "Park", null, null, null, "ESRI", "1502010POS", "<Null>", "37.458405839999998", "-121.89683076999999", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-x8jn.g4k9_484v", "00000000-0000-0000-6F94-7C6888BAF2B2", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.626588727659 37.135898805279)", "200", "Nordstrom Park", "Park", null, null, null, "ESRI", "2052010POS", "<Null>", "37.135893860000003", "-121.6265757", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-xgi5-8s9x~y37d", "00000000-0000-0000-D3F7-C8AEAB0DEB52", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.895787872862 37.287444568507)", "268", "Wallenberg Park", "Park", null, null, null, "ESRI", "2732010POS", "<Null>", "37.287439630000002", "-121.89577479", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              , [ "row-3nmm-cvse~sukf", "00000000-0000-0000-8A7A-A9CEED358391", 0, 1520655622, null, 1520655622, null, "{ }", "POINT (-121.851059499086 37.246283445563)", "69", "Cahalan Park", "Park", null, null, null, "ESRI", "742010POS", "<Null>", "37.246278500000003", "-121.85104643", 1315958400, "ISD - GIS", "Not Determined", "Leisure" ]
+              ]
+}

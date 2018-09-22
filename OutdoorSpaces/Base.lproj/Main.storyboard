@@ -57,6 +57,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Near Me" id="8oa-gb-FKD"/>
                     <connections>
+                        <outlet property="mapView" destination="DLw-So-8Gk" id="kv9-Pq-huJ"/>
                         <outlet property="searchbar" destination="aur-Oz-KTJ" id="zTj-Xp-jjx"/>
                         <outlet property="tableView" destination="Zkp-57-AG8" id="JkM-Gc-p8Z"/>
                     </connections>

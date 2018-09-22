@@ -142,4 +142,5 @@ class Park {
         self.pavedPathways = false
         self.lighted = false
     }
+
 }
