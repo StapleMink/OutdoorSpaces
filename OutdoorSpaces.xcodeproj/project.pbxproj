@@ -46,6 +46,7 @@
 		A02107DB214C617B009ECBAC /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		DC1184132156D4D900B595BC /* PublicParks.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = PublicParks.json; sourceTree = "<group>"; };
 		DC1184152156D65200B595BC /* ParkAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkAnnotation.swift; sourceTree = "<group>"; };
+		DC11841721570CF200B595BC /* CupertinoLocation.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = CupertinoLocation.gpx; sourceTree = "<group>"; };
 		DC5B2EBA214DFFBB0049D298 /* ParkTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkTableViewCell.swift; sourceTree = "<group>"; };
 		DC5B2EBC214E21E70049D298 /* Park.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Park.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -93,6 +94,7 @@
 				A00E30ED213392E900FAECE3 /* ViewController.swift */,
 				A02107D921484447009ECBAC /* LocationDetailViewController.swift */,
 				A02107DB214C617B009ECBAC /* MapViewController.swift */,
+				DC11841721570CF200B595BC /* CupertinoLocation.gpx */,
 				DC1184132156D4D900B595BC /* PublicParks.json */,
 				DC5B2EBA214DFFBB0049D298 /* ParkTableViewCell.swift */,
 				DC5B2EBC214E21E70049D298 /* Park.swift */,

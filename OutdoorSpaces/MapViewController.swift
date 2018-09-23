@@ -11,8 +11,11 @@
 import UIKit
 import MapKit
 
-class MapViewController: UIViewController, UISearchBarDelegate, UITableViewDataSource {
+class MapViewController: UIViewController {
 
+    // location manager stuff
+    let locationManager = CLLocationManager()
+    
     //search bar stuff
     @IBOutlet weak var searchbar: UISearchBar!
    // let searchController = UISearchController(searchResultsController: nil)
@@ -38,8 +41,6 @@ class MapViewController: UIViewController, UISearchBarDelegate, UITableViewDataS
         
         self.navigationController?.navigationBar.barStyle = UIBarStyle.default
         
-        // set up search bar
-        searchbar.delegate = self
         // Setup the Search Controller
         /*
         searchController.searchResultsUpdater = self
@@ -48,19 +49,19 @@ class MapViewController: UIViewController, UISearchBarDelegate, UITableViewDataS
         navigationItem.searchController = searchController
         definesPresentationContext = true */
         
-        // set up table view
-        tableView.dataSource = self
-        
-        // set up delegates
+        // set up delegates/data sources--extended in the extensions below
         mapView.delegate = self
+        searchbar.delegate = self
+        tableView.dataSource = self
+        // location manager
+        locationManager.delegate = self
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager.requestWhenInUseAuthorization() // location permission dialog
+        locationManager.requestLocation()
         
         //set beginning coordinate and region- later change to user's current location
         let initialLocation = CLLocation(latitude: 37.3184, longitude: -122.0699)
         centerMapOnLocatwion(location: initialLocation)
-        
-        // testing: show one pin on the map
-    /*    let montavistapark = ParkAnnotation(title: "Monta Vista Park", coordinate: CLLocationCoordinate2D(latitude: 37.3184, longitude: -122.0699))
-        mapView.addAnnotation(montavistapark)*/
         
         // plot all parks in json file
         loadInitialData()
@@ -89,38 +90,7 @@ class MapViewController: UIViewController, UISearchBarDelegate, UITableViewDataS
         self.navigationController?.navigationBar.isTranslucent = true
     }
     
-    // MARK: UISearchBarDelegate
-    
-    //called whenever search button is clicked
-    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-        //search database for the park using contents of search bar
-        
-        // update table view with results
-        
-        //testing:
-        print("search bar clicked!")
-        print("text is " + searchbar.text!)
-    }
-    
-    
-    //MARK: UITableViewDataSource
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
-    }
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        //number of parks
-        return parkResults.count;
-    }
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-        
-        // Configure the cell...
-        
-        return cell
-    }
-    
-    
-    //Map View methods
+    // MARK: Map View methods
     
     //helper method to set up the map view-- center it on a particular region
     //location: CLLocation is the center point
@@ -158,8 +128,9 @@ class MapViewController: UIViewController, UISearchBarDelegate, UITableViewDataS
             ParkAnnotation(json: $0)
         }
         parkAnnotations.append(contentsOf: validParksInFile)
-        print("loadInitialData completed, parkAnnotations array is \(parkAnnotations)")
-        print("coordinate of \(parkAnnotations[0].title) is \(parkAnnotations[0].coordinate)")
+        
+        /*print("loadInitialData completed, parkAnnotations array is \(parkAnnotations)")
+        print("coordinate of \(parkAnnotations[0].title) is \(parkAnnotations[0].coordinate)")*/
     }
 
 
@@ -209,6 +180,67 @@ extension MapViewController: MKMapViewDelegate {
         return view
     }
     
+}
+
+// extension to handle search bar stuff
+extension MapViewController: UISearchBarDelegate {
+    // MARK: UISearchBarDelegate
+    
+    //called whenever search button is clicked
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        //search database for the park using contents of search bar
+        
+        // update table view with results
+        
+        //testing:
+        print("search bar clicked!")
+        print("text is " + searchbar.text!)
+    }
+}
+
+// extension to handle TableViewDataSource stuff
+extension MapViewController: UITableViewDataSource {
+    
+    //MARK: UITableViewDataSource
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        //number of parks
+        return parkResults.count;
+    }
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        
+        // Configure the cell...
+        
+        return cell
+    }
+}
+
+// extension to handle user's location
+extension MapViewController: CLLocationManagerDelegate {
+    
+    // called when user responds to permission dialogue
+    func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
+        if status == .authorizedWhenInUse {
+            locationManager.requestLocation()
+        }
+        print("inside didChangeAuthorizationstatus" )
+    }
+    
+    // called when the location information comes back
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        // first location in array is the user's location
+        if let location = locations.first {
+            print("location:: \(location)")
+        }
+    }
+    
+    // called if there's an error with the location manager
+    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
+        print("error:: \(error)")
+    }
 }
 
 
