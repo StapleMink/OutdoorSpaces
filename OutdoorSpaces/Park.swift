@@ -8,15 +8,17 @@
 
 import Foundation
 import UIKit
+import MapKit
 
-class Park {
+class Park: NSObject, MKAnnotation {
     // MARK: Properties
     
     // general stuff
-    var name: String
+    let title: String?
     var photo: UIImage?
     var restrooms: Bool
     var dogFriendly: Bool
+    let coordinate: CLLocationCoordinate2D
     
     //sports courts
     var tennisCourtNum: Int
@@ -45,9 +47,10 @@ class Park {
     ///__________________________________rating: safety, cleanliness, amenities, overall
 
     // initializer with everything
-    init(name: String, photo: UIImage?, restrooms: Bool, dogFriendly: Bool, tennisCourtNum: Int, basketballCourtNum: Int, soccerFieldNum: Int, pickleballNum: Int, volleyballCourtNum: Int, track: Bool, footballFieldNum: Int, baseballFieldNum: Int, swimmingPool: Bool, sandbox: Bool, tanbark: Bool, rubber: Bool, swingsNum: Int, seesawNum: Int, seatingArea: Bool, bbq: Bool, pavedPathways: Bool, lighted: Bool)
+    init(title: String, coordinate: CLLocationCoordinate2D, photo: UIImage?, restrooms: Bool, dogFriendly: Bool, tennisCourtNum: Int, basketballCourtNum: Int, soccerFieldNum: Int, pickleballNum: Int, volleyballCourtNum: Int, track: Bool, footballFieldNum: Int, baseballFieldNum: Int, swimmingPool: Bool, sandbox: Bool, tanbark: Bool, rubber: Bool, swingsNum: Int, seesawNum: Int, seatingArea: Bool, bbq: Bool, pavedPathways: Bool, lighted: Bool)
     {
-        self.name = name
+        self.title = title
+        self.coordinate = coordinate
         self.photo = photo
         self.restrooms = restrooms
         self.dogFriendly = dogFriendly
@@ -75,13 +78,16 @@ class Park {
         self.bbq = bbq
         self.pavedPathways = pavedPathways
         self.lighted = lighted
+        
+        super.init()
     }
     
     // initializer with only sports courts
-    init(name: String, photo: UIImage?, restrooms: Bool, dogFriendly: Bool, tennisCourtNum: Int, basketballCourtNum: Int, soccerFieldNum: Int, pickleballNum: Int, volleyballCourtNum: Int, track: Bool, footballFieldNum: Int, baseballFieldNum: Int, swimmingPool: Bool)
+    init(title: String, coordinate: CLLocationCoordinate2D, photo: UIImage?, restrooms: Bool, dogFriendly: Bool, tennisCourtNum: Int, basketballCourtNum: Int, soccerFieldNum: Int, pickleballNum: Int, volleyballCourtNum: Int, track: Bool, footballFieldNum: Int, baseballFieldNum: Int, swimmingPool: Bool)
     {
-        self.name = name
+        self.title = title
         self.photo = photo
+        self.coordinate = coordinate
         self.restrooms = restrooms
         self.dogFriendly = dogFriendly
         
@@ -108,12 +114,15 @@ class Park {
         self.bbq = false
         self.pavedPathways = false
         self.lighted = false
+        
+        super.init()
     }
     
     // initializer with only playground stuff
-    init(name: String, photo: UIImage?, restrooms: Bool, dogFriendly: Bool, sandbox: Bool, tanbark: Bool, rubber: Bool, swingsNum: Int, seesawNum: Int)
+    init(title: String, coordinate: CLLocationCoordinate2D, photo: UIImage?, restrooms: Bool, dogFriendly: Bool, sandbox: Bool, tanbark: Bool, rubber: Bool, swingsNum: Int, seesawNum: Int)
     {
-        self.name = name
+        self.title = title
+        self.coordinate = coordinate
         self.photo = photo
         self.restrooms = restrooms
         self.dogFriendly = dogFriendly
@@ -141,6 +150,62 @@ class Park {
         self.bbq = false
         self.pavedPathways = false
         self.lighted = false
+        
+        super.init()
     }
-
+    
+    // initializer to initialize Park Annotation objects from the json file
+    // initializer to get info from the json file
+    init?(json: [Any]){
+        // get the info using the indicies of the arrays where the stuff is in the json file
+        self.title = json[10] as? String ?? "No Title"
+        
+        // get latitude and longitude if available, otherwise init to empty coordinate
+        if let latitude = Double(json[18] as! String), let longitude = Double(json[19] as! String) {
+            self.coordinate = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
+        } else{
+            self.coordinate = CLLocationCoordinate2D()
+        }
+        
+        self.photo = UIImage(named: "logoDark")
+        self.restrooms = false
+        self.dogFriendly = false
+        
+        // sports courts
+        self.tennisCourtNum = 0
+        self.basketballCourtNum = 0
+        self.soccerFieldNum = 0
+        self.pickleballNum = 0
+        self.volleyballCourtNum = 0
+        self.track = false
+        self.footballFieldNum = 0
+        self.baseballFieldNum = 0
+        self.swimmingPool = false
+        
+        // playground stuff
+        self.sandbox = false
+        self.tanbark = false
+        self.rubber = false
+        self.swingsNum = 0
+        self.seesawNum = 0
+        
+        // misc.
+        self.seatingArea = false
+        self.bbq = false
+        self.pavedPathways = false
+        self.lighted = false
+    }
+    
+    // create a location object with all other vars set as defaults
+    /*   init(title: String, coordinate: CLLocationCoordinate2D){
+     
+     self.title = title
+     self.coordinate = coordinate
+     
+     /*self.locationtitle = locationtitle
+     self.discipline = discipline*/
+     
+     super.init()
+     print("Inside init in ParkAnnotation")
+     } */
 }

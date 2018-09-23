@@ -3,7 +3,8 @@
 //  OutdoorSpaces
 
 // todo: set up json file with map, do table stuff, organize into extensions
-//
+// make search bar cover more when it is clicked on
+
 //  Created by Daniel Budziwojski on 9/14/18.
 //  Copyright © 2018 Sandbox Apps. All rights reserved.
 //
@@ -24,13 +25,14 @@ class MapViewController: UIViewController {
     
     // constraint outlets to allow table to scroll up
     @IBOutlet weak var searchBarTopConstraint: NSLayoutConstraint!
+    @IBOutlet weak var mapViewHeight: NSLayoutConstraint!
     
     
     // info for the table view
     var parkResults = [Park]()
     
     // info for the pins
-    var parkAnnotations: [ParkAnnotation] = []
+    var parksInArea: [Park] = []
     
     // mapview stuff
     @IBOutlet weak var mapView: MKMapView!
@@ -69,7 +71,7 @@ class MapViewController: UIViewController {
         
         // plot all parks in json file
         loadInitialData()
-        mapView.addAnnotations(parkAnnotations)
+        mapView.addAnnotations(parksInArea)
         
        // print("finished with viewDidLoad in MapViewController")
     }
@@ -129,12 +131,12 @@ class MapViewController: UIViewController {
         
         // put info into the artworks array
         let validParksInFile = parksInFile.compactMap{
-            ParkAnnotation(json: $0)
+            Park(json: $0)
         }
-        parkAnnotations.append(contentsOf: validParksInFile)
+        parksInArea.append(contentsOf: validParksInFile)
         
-        /*print("loadInitialData completed, parkAnnotations array is \(parkAnnotations)")
-        print("coordinate of \(parkAnnotations[0].title) is \(parkAnnotations[0].coordinate)")*/
+        /*print("loadInitialData completed, parksInArea array is \(parksInArea)")
+        print("coordinate of \(parksInArea[0].title) is \(parksInArea[0].coordinate)")*/
     }
 
 
@@ -161,7 +163,7 @@ extension MapViewController: MKMapViewDelegate {
         annotation: MKAnnotation) -> MKAnnotationView?
     {
         //make sure that this annotation is an Artwork object
-        guard let annotation = annotation as? ParkAnnotation else{ return nil }
+        guard let annotation = annotation as? Park else{ return nil }
         
         // make them appear as markers/pins
         let identifier = "marker"
@@ -193,8 +195,8 @@ extension MapViewController: UISearchBarDelegate {
     //called whenever search button is clicked
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         // expand table view to hide part of map
-       // searchBarTopConstraint = mapView.top - 0.5 * mapView.height
-       // searchbar.updateConstraints()
+        mapViewHeight.constant = view.frame.height/100
+        mapView.updateConstraints()
         
         //search database for the park using contents of search bar
         

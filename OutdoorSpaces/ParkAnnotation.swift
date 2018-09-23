@@ -2,12 +2,12 @@
 //  ParkAnnotation.swift
 //  OutdoorSpaces
 // Class to hold information to make a pin on the map with the Park info
-// Needs to still be integrated with the Park class data (somehow link the two in the init or soemthing)
+// NO LONGER USED-- all of this is in the Park.swift file instead
 //
 //  Created by Cynthia Hom on 9/22/18.
 //  Copyright © 2018 Sandbox Apps. All rights reserved.
 //
-
+/*
 import Foundation
 import MapKit
 
@@ -55,4 +55,4 @@ class ParkAnnotation: NSObject, MKAnnotation {
  /*   var subtitle: String?{
         return locationName
     }*/
-}
+}*/
