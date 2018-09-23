@@ -46,6 +46,10 @@
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
                                             </subviews>
+                                            <connections>
+                                                <outlet property="parkImage" destination="R8U-te-tXC" id="7e5-ST-OMe"/>
+                                                <outlet property="parkLabel" destination="ZSE-nW-bWp" id="h7u-KJ-EYQ"/>
+                                            </connections>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
@@ -76,6 +80,7 @@
                     <navigationItem key="navigationItem" title="Near Me" id="8oa-gb-FKD"/>
                     <connections>
                         <outlet property="mapView" destination="DLw-So-8Gk" id="kv9-Pq-huJ"/>
+                        <outlet property="searchBarTopConstraint" destination="QU7-wh-lqb" id="eew-Ip-BYR"/>
                         <outlet property="searchbar" destination="a4V-2d-2Xf" id="9Eu-3z-1Lw"/>
                         <outlet property="tableView" destination="Zkp-57-AG8" id="JkM-Gc-p8Z"/>
                     </connections>

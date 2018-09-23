@@ -22,6 +22,10 @@ class MapViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
+    // constraint outlets to allow table to scroll up
+    @IBOutlet weak var searchBarTopConstraint: NSLayoutConstraint!
+    
+    
     // info for the table view
     var parkResults = [Park]()
     
@@ -188,6 +192,10 @@ extension MapViewController: UISearchBarDelegate {
     
     //called whenever search button is clicked
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        // expand table view to hide part of map
+       // searchBarTopConstraint = mapView.top - 0.5 * mapView.height
+       // searchbar.updateConstraints()
+        
         //search database for the park using contents of search bar
         
         // update table view with results
