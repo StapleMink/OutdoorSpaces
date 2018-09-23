@@ -21,15 +21,13 @@ class MapViewController: UIViewController {
     @IBOutlet weak var searchbar: UISearchBar!
    // let searchController = UISearchController(searchResultsController: nil)
     
-    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var tableView: MapTableView!
     
     // constraint outlets to allow table to scroll up
     @IBOutlet weak var searchBarTopConstraint: NSLayoutConstraint!
     @IBOutlet weak var mapViewHeight: NSLayoutConstraint!
+
     
-    
-    // info for the table view
-    var parkResults = [Park]()
     
     // info for the pins
     var parksInArea: [Park] = []
@@ -58,7 +56,8 @@ class MapViewController: UIViewController {
         // set up delegates/data sources--extended in the extensions below
         mapView.delegate = self
         searchbar.delegate = self
-        tableView.dataSource = self
+        tableView.dataSource = tableView
+        
         // location manager
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
@@ -134,9 +133,6 @@ class MapViewController: UIViewController {
             Park(json: $0)
         }
         parksInArea.append(contentsOf: validParksInFile)
-        
-        /*print("loadInitialData completed, parksInArea array is \(parksInArea)")
-        print("coordinate of \(parksInArea[0].title) is \(parksInArea[0].coordinate)")*/
     }
 
 
@@ -151,7 +147,6 @@ class MapViewController: UIViewController {
     */
 
 }
-
 
 
 // use to handle map view delegate methods
@@ -208,25 +203,6 @@ extension MapViewController: UISearchBarDelegate {
     }
 }
 
-// extension to handle TableViewDataSource stuff
-extension MapViewController: UITableViewDataSource {
-    
-    //MARK: UITableViewDataSource
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
-    }
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        //number of parks
-        return parkResults.count;
-    }
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-        
-        // Configure the cell...
-        
-        return cell
-    }
-}
 
 // extension to handle user's location
 extension MapViewController: CLLocationManagerDelegate {
@@ -255,4 +231,23 @@ extension MapViewController: CLLocationManagerDelegate {
 
 
 
+// extension to handle TableViewDataSource stuff (commented bc this is now in the MapTableView
+/*extension MapViewController: UITableViewDataSource {
+ 
+ //MARK: UITableViewDataSource
+ func numberOfSections(in tableView: UITableView) -> Int {
+ return 1
+ }
+ func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+ //number of parks
+ return parkResults.count;
+ }
+ func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+ let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+ 
+ // Configure the cell...
+ 
+ return cell
+ }
+ } */
 
