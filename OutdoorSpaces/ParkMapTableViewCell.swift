@@ -1,15 +1,18 @@
 //
-//  ParkTableViewCell.swift
+//  ParkMapTableViewCell.swift
 //  OutdoorSpaces
 //
-//  Created by Cynthia Hom on 9/15/18.
+//  Created by Cynthia Hom on 9/22/18.
 //  Copyright © 2018 Sandbox Apps. All rights reserved.
 //
 
 import UIKit
 
-class ParkTableViewCell: UITableViewCell {
+class ParkMapTableViewCell: UITableViewCell {
 
+    // MARK: Properties
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

@@ -17,7 +17,7 @@
 		A02107DC214C617B009ECBAC /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02107DB214C617B009ECBAC /* MapViewController.swift */; };
 		DC1184142156D4D900B595BC /* PublicParks.json in Resources */ = {isa = PBXBuildFile; fileRef = DC1184132156D4D900B595BC /* PublicParks.json */; };
 		DC1184162156D65200B595BC /* ParkAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1184152156D65200B595BC /* ParkAnnotation.swift */; };
-		DC5B2EBB214DFFBB0049D298 /* ParkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5B2EBA214DFFBB0049D298 /* ParkTableViewCell.swift */; };
+		DC1184192157150300B595BC /* ParkMapTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1184182157150300B595BC /* ParkMapTableViewCell.swift */; };
 		DC5B2EBD214E21E70049D298 /* Park.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5B2EBC214E21E70049D298 /* Park.swift */; };
 /* End PBXBuildFile section */
 
@@ -47,7 +47,7 @@
 		DC1184132156D4D900B595BC /* PublicParks.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = PublicParks.json; sourceTree = "<group>"; };
 		DC1184152156D65200B595BC /* ParkAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkAnnotation.swift; sourceTree = "<group>"; };
 		DC11841721570CF200B595BC /* CupertinoLocation.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = CupertinoLocation.gpx; sourceTree = "<group>"; };
-		DC5B2EBA214DFFBB0049D298 /* ParkTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkTableViewCell.swift; sourceTree = "<group>"; };
+		DC1184182157150300B595BC /* ParkMapTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkMapTableViewCell.swift; sourceTree = "<group>"; };
 		DC5B2EBC214E21E70049D298 /* Park.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Park.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -94,9 +94,9 @@
 				A00E30ED213392E900FAECE3 /* ViewController.swift */,
 				A02107D921484447009ECBAC /* LocationDetailViewController.swift */,
 				A02107DB214C617B009ECBAC /* MapViewController.swift */,
+				DC1184182157150300B595BC /* ParkMapTableViewCell.swift */,
 				DC11841721570CF200B595BC /* CupertinoLocation.gpx */,
 				DC1184132156D4D900B595BC /* PublicParks.json */,
-				DC5B2EBA214DFFBB0049D298 /* ParkTableViewCell.swift */,
 				DC5B2EBC214E21E70049D298 /* Park.swift */,
 				DC1184152156D65200B595BC /* ParkAnnotation.swift */,
 				A00E30EF213392EA00FAECE3 /* Main.storyboard */,
@@ -221,8 +221,8 @@
 				A00E30EE213392E900FAECE3 /* ViewController.swift in Sources */,
 				DC1184162156D65200B595BC /* ParkAnnotation.swift in Sources */,
 				DC5B2EBD214E21E70049D298 /* Park.swift in Sources */,
+				DC1184192157150300B595BC /* ParkMapTableViewCell.swift in Sources */,
 				A02107DA21484447009ECBAC /* LocationDetailViewController.swift in Sources */,
-				DC5B2EBB214DFFBB0049D298 /* ParkTableViewCell.swift in Sources */,
 				A00E30EC213392E900FAECE3 /* AppDelegate.swift in Sources */,
 				A02107DC214C617B009ECBAC /* MapViewController.swift in Sources */,
 			);
