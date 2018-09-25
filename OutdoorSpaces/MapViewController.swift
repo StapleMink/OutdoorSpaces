@@ -11,11 +11,14 @@
 
 import UIKit
 import MapKit
+import CoreLocation
 
 class MapViewController: UIViewController {
 
     // location manager stuff
     let locationManager = CLLocationManager()
+    // users location upon opening the map
+    var userLocation = CLLocation(latitude: 37.787, longitude: -122.408)
     
     //search bar stuff
     @IBOutlet weak var searchbar: UISearchBar!
@@ -63,15 +66,20 @@ class MapViewController: UIViewController {
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
         locationManager.requestWhenInUseAuthorization() // location permission dialog
         locationManager.requestLocation()
+        // default location is cupertino apple headquarters
+        //userLocation = CLLocation(latitude: 37.787, longitude: -122.408)
         
         //set beginning coordinate and region- later change to user's current location
-        let initialLocation = CLLocation(latitude: 37.3184, longitude: -122.0699)
-        centerMapOnLocatwion(location: initialLocation)
+            // lines moved to the location extension
+    //    let initialLocation = userLocation
+    //    centerMapOnLocation(location: initialLocation)
         
         // plot all parks in json file
         loadInitialData()
         mapView.addAnnotations(parksInArea)
         
+        // put parks within a 10 mile radius in the table view
+        tableView.loadInitialParks(allParks: parksInArea)
        // print("finished with viewDidLoad in MapViewController")
     }
 
@@ -99,7 +107,7 @@ class MapViewController: UIViewController {
     
     //helper method to set up the map view-- center it on a particular region
     //location: CLLocation is the center point
-    func centerMapOnLocatwion(location: CLLocation)
+    func centerMapOnLocation(location: CLLocation)
     {
         let coordinateRegion = MKCoordinateRegionMakeWithDistance(location.coordinate, regionRadius, regionRadius)
         //tell mapView to display the region
@@ -220,6 +228,16 @@ extension MapViewController: CLLocationManagerDelegate {
         // first location in array is the user's location
         if let location = locations.first {
             print("location:: \(location)")
+            
+            // update current location-- simulated location using CupertinoLocation gpx file is
+                // Apple Campus, so it should center on Apple Campus
+            userLocation = location
+            centerMapOnLocation(location: userLocation)
+        }
+        else
+        {
+            let initialLocation = userLocation
+            centerMapOnLocation(location: initialLocation)
         }
     }
     

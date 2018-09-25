@@ -13,7 +13,8 @@ class ParkMapTableViewCell: UITableViewCell {
 
     // MARK: Properties
     @IBOutlet weak internal var parkLabel: UILabel!
-    @IBOutlet weak internal var parkImage: UIImageView!
+    
+    @IBOutlet weak var parkImageView: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
