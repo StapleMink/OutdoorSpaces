@@ -160,7 +160,7 @@
                             <tableViewSection headerTitle="Basic Information" id="6wt-0h-nw2">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" editingAccessoryType="detailDisclosureButton" rowHeight="44" id="FFX-1m-lZ0">
-                                        <rect key="frame" x="0.0" y="55.333333333333336" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="55.333333333333343" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="FFX-1m-lZ0" id="KsC-t4-as1">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.666666666666664"/>

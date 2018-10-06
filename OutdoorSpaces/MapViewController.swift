@@ -18,10 +18,9 @@ import UIKit
 import MapKit
 import CoreLocation
 
-class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
+class MapViewController: UIViewController{
     
     //MARK: Properties
-    @IBOutlet weak var mapView: MKMapView!
     var manager: CLLocationManager?
     
 
