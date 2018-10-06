@@ -4,7 +4,8 @@
 
 // todo:
 // make search bar cover more when it is clicked on
-// make search bar work for bringing up table results and showing point on map
+// MKCLUSTER ANNOTATION
+
 // click on table view cell should make location detail view controller come up
 // questions: clicking on the point on the map should do what?
 // figure out location error
@@ -47,7 +48,7 @@ class MapViewController: UIViewController {
     // mapview stuff
     @IBOutlet weak var mapView: MKMapView!
     //radius of region displayed by map
-    let regionRadius: CLLocationDistance = 4000 // about 1 mile
+    let regionRadius: CLLocationDistance = 40000 // about 1 mile
     
     
     override func viewDidLoad() {
