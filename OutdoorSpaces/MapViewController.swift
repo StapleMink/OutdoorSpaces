@@ -13,7 +13,12 @@ import UIKit
 import MapKit
 import CoreLocation
 
-class MapViewController: UIViewController {
+class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
+    
+    //MARK: Properties
+    @IBOutlet weak var mapView: MKMapView!
+    var manager: CLLocationManager?
+    
 
     // location manager stuff
     let locationManager = CLLocationManager()
@@ -45,6 +50,7 @@ class MapViewController: UIViewController {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
+        self.navigationController?.navigationBar.barStyle = UIBarStyle.default
         
         self.navigationController?.navigationBar.barStyle = UIBarStyle.default
         
@@ -91,6 +97,7 @@ class MapViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         // Transparent navigation bar
+        self.navigationController?.navigationBar.barStyle = UIBarStyle.default
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
         self.navigationController?.navigationBar.shadowImage = UIImage()
         self.navigationController?.navigationBar.isTranslucent = true
@@ -153,6 +160,25 @@ class MapViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    //MARK: Map Implementation
+    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
+        print("error:: \(error.localizedDescription)")
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
+        if status == .authorizedWhenInUse || status == .authorizedAlways{
+            manager.requestLocation()
+        }
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        
+        if locations.first != nil {
+            print("location:: (location)")
+        }
+        
+    }
 
 }
 
