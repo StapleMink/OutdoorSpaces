@@ -13,11 +13,6 @@ class MapTableView: UITableView, UITableViewDataSource {
     // info for the table view
     var parkResults = [Park]()
     
-    // var to hold the user's location -- passed from the map class to this class
-        // default is apple headquarters
-   // var userLocation = CLLocation(latitude: 37.787, longitude: -122.408)
-    
-    
     //MARK: UITableViewDataSource
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
@@ -77,32 +72,11 @@ class MapTableView: UITableView, UITableViewDataSource {
         parkResults = orderedParks
     }
     
- //   override func reloadData() {
- //       \
-  //  }
-    
     // setter method for parkResults
     func setParkResults(results: [Park])
     {
         parkResults = results
     }
- /*
-    // returns an array of parks ordered by the closest first,
-        // second closest next, etc
-    func orderParksByProximity (allParks: [Park]) -> [Park]
-    {
-        // new list- parks within a 10 mile radius that are ordered
-        let orderedParks = [Park]()
-        
-        // show only ones within a 10 mile radius
-        
-        
-        //order the parks by closeness
-        return orderedParks
-    }
-    */
-   /* func setUserLocation ( userLoc: CLLocation) {
-      userLocation = userLoc
-    }*/
+
 
 }

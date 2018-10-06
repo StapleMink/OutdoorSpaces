@@ -9,7 +9,7 @@
 // questions: clicking on the point on the map should do what?
 // figure out location error
 
-//  Created by Daniel Budziwojski on 9/14/18.
+//  Created by Daniel Budziwojski and Cynthia Hom on 9/14/18.
 //  Copyright © 2018 Sandbox Apps. All rights reserved.
 //
 
@@ -47,7 +47,7 @@ class MapViewController: UIViewController {
     // mapview stuff
     @IBOutlet weak var mapView: MKMapView!
     //radius of region displayed by map
-    let regionRadius: CLLocationDistance = 2000 // about half a mile
+    let regionRadius: CLLocationDistance = 8000 // about 2 miles
     
     
     override func viewDidLoad() {
@@ -68,6 +68,7 @@ class MapViewController: UIViewController {
         // set up delegates/data sources--extended in the extensions below
         mapView.delegate = self
         searchbar.delegate = self
+        searchbar.showsCancelButton = true
         tableView.dataSource = tableView
         
         // location manager
