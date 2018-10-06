@@ -2,8 +2,12 @@
 //  MapViewController.swift
 //  OutdoorSpaces
 
-// todo: set up json file with map, do table stuff, organize into extensions
+// todo:
 // make search bar cover more when it is clicked on
+// make search bar work for bringing up table results and showing point on map
+// click on table view cell should make location detail view controller come up
+// questions: clicking on the point on the map should do what?
+//
 
 //  Created by Daniel Budziwojski on 9/14/18.
 //  Copyright © 2018 Sandbox Apps. All rights reserved.
@@ -17,8 +21,8 @@ class MapViewController: UIViewController {
 
     // location manager stuff
     let locationManager = CLLocationManager()
-    // users location upon opening the map
-    var userLocation = CLLocation(latitude: 37.787, longitude: -122.408)
+    // users location upon opening the map: default is apple
+    var userLocation = CLLocation(latitude: 37.331705, longitude: -122.030237)
     
     //search bar stuff
     @IBOutlet weak var searchbar: UISearchBar!
@@ -32,8 +36,10 @@ class MapViewController: UIViewController {
 
     
     
-    // info for the pins
+    // info for the pins:
     var parksInArea: [Park] = []
+    // ordered info for pins (in order of distance)
+    var orderedParksInArea: [Park] = []
     
     // mapview stuff
     @IBOutlet weak var mapView: MKMapView!
@@ -67,20 +73,39 @@ class MapViewController: UIViewController {
         locationManager.requestWhenInUseAuthorization() // location permission dialog
         locationManager.requestLocation()
         // default location is cupertino apple headquarters
-        //userLocation = CLLocation(latitude: 37.787, longitude: -122.408)
+        //userLocation = CLLocation(latitude: 37.331705, longitude: -122.030237)
         
         //set beginning coordinate and region- later change to user's current location
             // lines moved to the location extension
-    //    let initialLocation = userLocation
-    //    centerMapOnLocation(location: initialLocation)
+        let initialLocation = userLocation
+        centerMapOnLocation(location: initialLocation)
         
-        // plot all parks in json file
+        // get all parks in json file
         loadInitialData()
-        mapView.addAnnotations(parksInArea)
         
-        // put parks within a 10 mile radius in the table view
-        tableView.loadInitialParks(allParks: parksInArea)
-       // print("finished with viewDidLoad in MapViewController")
+        //
+        print("user location is \(userLocation)")
+        
+   //     print(parksInArea)
+        
+        // figure out which parks are within a 10 mile radius in the table view
+        
+        for i in 0...parksInArea.count - 1 {
+        print("distance from current location to \(parksInArea[i].title) is " +
+            "\(parksInArea[i].calcDistanceFromLoc(userLoc: userLocation))")
+            print("coordinate is \(parksInArea[i].coordinate)")
+        }
+        
+        // order these parks by proximity to the user's current location
+        orderParksByLoc()
+        
+        // add these parks to the map and table view
+        mapView.addAnnotations(orderedParksInArea)
+        tableView.loadInitialParks(orderedParks: orderedParksInArea)
+        
+      //  print("parks in area is \(parksInArea)")
+        print("ordered parks in area is \(orderedParksInArea)")
+        print("finished with viewDidLoad in MapViewController")
     }
 
     override func didReceiveMemoryWarning() {
@@ -143,6 +168,67 @@ class MapViewController: UIViewController {
         parksInArea.append(contentsOf: validParksInFile)
     }
 
+    
+    // Takes the Parks array and takes out any parks not within a 3 mile radius of the current location while sorting based on proximity to current user location
+    func orderParksByLoc() {
+      //  var orderedParks = [Park]()
+        print("order parks in loc called")
+        //let METERS_PER_MILE = 1609
+        
+        // loop through array
+        for i in 0...parksInArea.count - 1 {
+            let park = parksInArea[i]
+            
+            // for each park, calculate location
+            let distanceFromLocInMiles = park.calcDistanceFromLoc(userLoc: userLocation)
+          /*  let parkCoordinate = park.coordinate
+            let parkLocation = CLLocation(latitude: parkCoordinate.latitude, longitude: parkCoordinate.longitude)
+            let distanceFromLocInMeters = parkLocation.distance(from: userLocation)
+            let distanceFromLocInMiles = (Double)(distanceFromLocInMeters)/(Double)(METERS_PER_MILE)*/
+            
+            // if less than 3 miles from current location,
+            // add to array, otherwise do not add to array
+            if (distanceFromLocInMiles < 30)
+            {
+                print("distance from loc in miles is less than 3")
+                // add park to array in correct order
+                addParkToOrderedArray(park: park, distance: distanceFromLocInMiles)
+            }
+        }
+       // print("order parks in loc called")
+        
+       // return orderedParks
+    }
+    
+    
+    func addParkToOrderedArray(park: Park, distance: Double)
+    {
+        // if empty array just add it
+        if (orderedParksInArea.count == 0)
+        {
+            orderedParksInArea.append(park);
+        }
+        
+        // adding to array--go through array until we find that the next park is farther from current location than this park
+        var i = 0;
+        while (i < orderedParksInArea.count)
+        {
+            // calc distance of this next park
+            let nextParkDist = orderedParksInArea[i].calcDistanceFromLoc(userLoc: userLocation)
+            
+            // if the next park has a distance farther than this park's distance, add the park here. Otherwise, keep incrementing
+            if (nextParkDist < distance) {
+                i += 1
+            } else{
+                // insert this park right before if the next one has a larger distance
+                orderedParksInArea.insert(park, at: i)
+                
+                // quit out of loop
+                i = orderedParksInArea.count
+            }
+        }
+        
+    }
 
     /*
     // MARK: - Navigation
@@ -153,6 +239,8 @@ class MapViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    
 
 }
 
@@ -236,8 +324,8 @@ extension MapViewController: CLLocationManagerDelegate {
         }
         else
         {
-            let initialLocation = userLocation
-            centerMapOnLocation(location: initialLocation)
+            //let initialLocation = userLocation
+            centerMapOnLocation(location: userLocation)
         }
     }
     
