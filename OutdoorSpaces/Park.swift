@@ -201,13 +201,10 @@ class Park: NSObject, MKAnnotation {
     func calcDistanceFromLoc(userLoc: CLLocation) -> Double
     {
         let METERS_PER_MILE = 1609.344
-        
-        
         let parkCoordinate = self.coordinate
         
         // create location from the coordinate
         let parkLocation = CLLocation(latitude: parkCoordinate.latitude, longitude: parkCoordinate.longitude)
-        print("inside calc method, park location is \(parkLocation)")
         // calc distance in meters
         let distanceFromLocInMeters = userLoc.distance(from: parkLocation)
         

@@ -76,6 +76,16 @@ class MapTableView: UITableView, UITableViewDataSource {
     {
         parkResults = orderedParks
     }
+    
+ //   override func reloadData() {
+ //       \
+  //  }
+    
+    // setter method for parkResults
+    func setParkResults(results: [Park])
+    {
+        parkResults = results
+    }
  /*
     // returns an array of parks ordered by the closest first,
         // second closest next, etc
