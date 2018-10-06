@@ -167,7 +167,7 @@ class Park: NSObject, MKAnnotation {
             self.coordinate = CLLocationCoordinate2D()
         }
         
-        self.photo = UIImage(named: "logoDark")
+        self.photo = UIImage(named: "defaultParkImage")
         self.restrooms = false
         self.dogFriendly = false
         

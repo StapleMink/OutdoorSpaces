@@ -39,16 +39,8 @@ class MapTableView: UITableView, UITableViewDataSource {
         // Gets the right park to display
         let parkToDisplay = parkResults[indexPath.row]
         
-        // Configure cell
-        //cell.parkImageView.image = UIImage(named: "logoDark")
-        
-        // display the park image if it exists, otherwise use our logo as the default
-        if parkToDisplay.photo != nil{
-            cell.parkImageView.image = parkToDisplay.photo
-        }
-        else{
-            cell.parkImageView.image = UIImage(named: "logo")
-        }
+        // display the park image
+        cell.parkImageView.image = parkToDisplay.photo
         
         // only set the cell's label to the park name if the park name exists,
             // otherwise set it to the default name "Park"

@@ -47,7 +47,7 @@ class MapViewController: UIViewController {
     // mapview stuff
     @IBOutlet weak var mapView: MKMapView!
     //radius of region displayed by map
-    let regionRadius: CLLocationDistance = 8000 // about 2 miles
+    let regionRadius: CLLocationDistance = 4000 // about 1 mile
     
     
     override func viewDidLoad() {
