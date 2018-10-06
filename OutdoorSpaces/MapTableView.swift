@@ -13,7 +13,6 @@ class MapTableView: UITableView, UITableViewDataSource {
     // info for the table view
     var parkResults = [Park]()
     
-    
     //MARK: UITableViewDataSource
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
@@ -40,16 +39,8 @@ class MapTableView: UITableView, UITableViewDataSource {
         // Gets the right park to display
         let parkToDisplay = parkResults[indexPath.row]
         
-        // Configure cell
-        //cell.parkImageView.image = UIImage(named: "logoDark")
-        
-        // display the park image if it exists, otherwise use our logo as the default
-        if parkToDisplay.photo != nil{
-            cell.parkImageView.image = parkToDisplay.photo
-        }
-        else{
-            cell.parkImageView.image = UIImage(named: "logo")
-        }
+        // display the park image
+        cell.parkImageView.image = parkToDisplay.photo
         
         // only set the cell's label to the park name if the park name exists,
             // otherwise set it to the default name "Park"
@@ -66,27 +57,18 @@ class MapTableView: UITableView, UITableViewDataSource {
         return cell
     }
     
-    func loadInitialParks(allParks: [Park])
+    // takes in all parks within a 10 mile radius ordered by location
+        // (this work is done in the MapViewController
+    func loadInitialParks(orderedParks: [Park])
     {
-        // loop through all parks in dataset
-        //parkResults = orderParksByProximity(allParks: [Park])
-        
-        // show only ones within a 10 mile radius
-        parkResults = allParks
+        parkResults = orderedParks
     }
     
-    // returns an array of parks ordered by the closest first,
-        // second closest next, etc
-    func orderParksByProximity (allParks: [Park]) -> [Park]
+    // setter method for parkResults
+    func setParkResults(results: [Park])
     {
-        // new list- parks within a 10 mile radius that are ordered
-        let orderedParks = [Park]()
-        
-        // show only ones within a 10 mile radius
-        
-        
-        //order the parks by closeness
-        return orderedParks
+        parkResults = results
     }
+
 
 }

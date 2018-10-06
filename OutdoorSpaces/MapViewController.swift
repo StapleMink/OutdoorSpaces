@@ -2,10 +2,15 @@
 //  MapViewController.swift
 //  OutdoorSpaces
 
-// todo: set up json file with map, do table stuff, organize into extensions
+// todo:
 // make search bar cover more when it is clicked on
+// MKCLUSTER ANNOTATION
 
-//  Created by Daniel Budziwojski on 9/14/18.
+// click on table view cell should make location detail view controller come up
+// questions: clicking on the point on the map should do what?
+// figure out location error
+
+//  Created by Daniel Budziwojski and Cynthia Hom on 9/14/18.
 //  Copyright © 2018 Sandbox Apps. All rights reserved.
 //
 
@@ -22,8 +27,9 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
 
     // location manager stuff
     let locationManager = CLLocationManager()
-    // users location upon opening the map
-    var userLocation = CLLocation(latitude: 37.787, longitude: -122.408)
+    // users location upon opening the map: default is apple
+    var userLocation = CLLocation(latitude: 37.331705, longitude: -122.030237)
+    var searchActive: Bool = false // whether to display filtereds or location based results
     
     //search bar stuff
     @IBOutlet weak var searchbar: UISearchBar!
@@ -37,13 +43,17 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
 
     
     
-    // info for the pins
+    // all parks in data:
     var parksInArea: [Park] = []
+    // ordered info for pins (in order of distance)
+    var orderedParksInArea: [Park] = []
+    // filtered parks for table view
+  //  var filteredParks: [Park] = []
     
     // mapview stuff
     @IBOutlet weak var mapView: MKMapView!
     //radius of region displayed by map
-    let regionRadius: CLLocationDistance = 2000 // about half a mile
+    let regionRadius: CLLocationDistance = 40000 // about 1 mile
     
     
     override func viewDidLoad() {
@@ -65,28 +75,33 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
         // set up delegates/data sources--extended in the extensions below
         mapView.delegate = self
         searchbar.delegate = self
+        searchbar.showsCancelButton = true
         tableView.dataSource = tableView
         
         // location manager
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
         locationManager.requestWhenInUseAuthorization() // location permission dialog
-        locationManager.requestLocation()
+       // locationManager.requestLocation()
         // default location is cupertino apple headquarters
-        //userLocation = CLLocation(latitude: 37.787, longitude: -122.408)
+        //userLocation = CLLocation(latitude: 37.331705, longitude: -122.030237)
         
         //set beginning coordinate and region- later change to user's current location
             // lines moved to the location extension
-    //    let initialLocation = userLocation
-    //    centerMapOnLocation(location: initialLocation)
+        let initialLocation = userLocation
+        centerMapOnLocation(location: initialLocation)
         
-        // plot all parks in json file
+        // get all parks in json file
         loadInitialData()
-        mapView.addAnnotations(parksInArea)
+
+        // order parks by proximity to the user's current location
+        orderParksByLoc()
         
-        // put parks within a 10 mile radius in the table view
-        tableView.loadInitialParks(allParks: parksInArea)
-       // print("finished with viewDidLoad in MapViewController")
+        // add these parks to the map and table view
+        mapView.addAnnotations(orderedParksInArea)
+        tableView.loadInitialParks(orderedParks: orderedParksInArea)
+
+        print("finished with viewDidLoad in MapViewController")
     }
 
     override func didReceiveMemoryWarning() {
@@ -150,6 +165,56 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
         parksInArea.append(contentsOf: validParksInFile)
     }
 
+    
+    // Takes the Parks array and takes out any parks not within a 3 mile radius of the current location while sorting based on proximity to current user location
+    func orderParksByLoc() {
+
+        // loop through array
+        for i in 0...parksInArea.count - 1 {
+            let park = parksInArea[i]
+            
+            // for each park, calculate location
+            let distanceFromLocInMiles = park.calcDistanceFromLoc(userLoc: userLocation)
+            
+            // if less than 7 miles from current location,
+            // add to array, otherwise do not add to array
+            if (distanceFromLocInMiles < 10)
+            {
+                // add park to array in correct order
+                addParkToOrderedArray(park: park, distance: distanceFromLocInMiles)
+            }
+        }
+    }
+    
+    // uses insertion sort to sort the parks while inserting them into the array
+    func addParkToOrderedArray(park: Park, distance: Double)
+    {
+        // if empty array just add it
+        if (orderedParksInArea.count == 0)
+        {
+            orderedParksInArea.append(park);
+        }
+        
+        // adding to array--go through array until we find that the next park is farther from current location than this park
+        var i = 0;
+        while (i < orderedParksInArea.count)
+        {
+            // calc distance of this next park
+            let nextParkDist = orderedParksInArea[i].calcDistanceFromLoc(userLoc: userLocation)
+            
+            // if the next park has a distance farther than this park's distance, add the park here. Otherwise, keep incrementing
+            if (nextParkDist < distance) {
+                i += 1
+            } else{
+                // insert this park right before if the next one has a larger distance
+                orderedParksInArea.insert(park, at: i)
+                
+                // quit out of loop
+                i = orderedParksInArea.count
+            }
+        }
+        
+    }
 
     /*
     // MARK: - Navigation
@@ -161,24 +226,7 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
     }
     */
     
-    //MARK: Map Implementation
-    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
-        print("error:: \(error.localizedDescription)")
-    }
     
-    func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
-        if status == .authorizedWhenInUse || status == .authorizedAlways{
-            manager.requestLocation()
-        }
-    }
-    
-    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        
-        if locations.first != nil {
-            print("location:: (location)")
-        }
-        
-    }
 
 }
 
@@ -221,20 +269,61 @@ extension MapViewController: MKMapViewDelegate {
 extension MapViewController: UISearchBarDelegate {
     // MARK: UISearchBarDelegate
     
+    // update table view whenever search bar is editied
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        var filteredParks = [Park]()
+        //print("text did change called, text is \(searchText)")
+        
+        // only keep parks that contain the search query
+        filteredParks = parksInArea.filter{$0.title?.lowercased().contains(searchText.lowercased()) ?? false}
+        self.tableView.setParkResults(results: filteredParks)
+        
+        // if no parks match query, make array empty
+        if(filteredParks.count == 0){
+            searchActive = false;
+            //self.tableView.setParkResults(results: orderedParksInArea)
+        } else {
+            searchActive = true;
+        }
+        self.tableView.reloadData()
+    }
+    
+    func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
+        searchActive = true;
+    }
+    
+    func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
+        searchActive = false;
+    }
+    
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        searchActive = false;
+        self.tableView.setParkResults(results: orderedParksInArea)
+        self.tableView.reloadData()
+    }
+    
+    func searchBarBookmarkButtonClicked(_ searchBar: UISearchBar) {
+        searchActive = false;
+    }
+    
     //called whenever search button is clicked
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-        // expand table view to hide part of map
-        mapViewHeight.constant = view.frame.height/100
-        mapView.updateConstraints()
-        
-        //search database for the park using contents of search bar
-        
-        // update table view with results
-        
-        //testing:
-        print("search bar clicked!")
-        print("text is " + searchbar.text!)
+        searchActive = false;
     }
+    
+    
+    // search through the database and find parks that match the search query
+/*    func findMatchingParks(searchQuery: String) -> [Park]{
+        var matchingParks: [Park] = []
+        
+        // loop through array
+        for i in 0...parksInArea.count - 1 {
+            let park = parksInArea[i]
+            
+        }
+        
+        return matchingParks
+    }*/
 }
 
 
@@ -246,11 +335,13 @@ extension MapViewController: CLLocationManagerDelegate {
         if status == .authorizedWhenInUse {
             locationManager.requestLocation()
         }
-        print("inside didChangeAuthorizationstatus" )
+        print("inside didChangeAuthorizationstatus, status is \(status)" )
     }
     
     // called when the location information comes back
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        
+        print("inside location manager 2")
         // first location in array is the user's location
         if let location = locations.first {
             print("location:: \(location)")
@@ -262,8 +353,8 @@ extension MapViewController: CLLocationManagerDelegate {
         }
         else
         {
-            let initialLocation = userLocation
-            centerMapOnLocation(location: initialLocation)
+            //let initialLocation = userLocation
+            centerMapOnLocation(location: userLocation)
         }
     }
     

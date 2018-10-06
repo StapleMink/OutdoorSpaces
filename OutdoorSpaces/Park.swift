@@ -167,7 +167,7 @@ class Park: NSObject, MKAnnotation {
             self.coordinate = CLLocationCoordinate2D()
         }
         
-        self.photo = UIImage(named: "logoDark")
+        self.photo = UIImage(named: "defaultParkImage")
         self.restrooms = false
         self.dogFriendly = false
         
@@ -194,6 +194,22 @@ class Park: NSObject, MKAnnotation {
         self.bbq = false
         self.pavedPathways = false
         self.lighted = false
+    }
+    
+    
+    // function that takes a given park (with a location) and calculates the distance between the user's location and the park
+    func calcDistanceFromLoc(userLoc: CLLocation) -> Double
+    {
+        let METERS_PER_MILE = 1609.344
+        let parkCoordinate = self.coordinate
+        
+        // create location from the coordinate
+        let parkLocation = CLLocation(latitude: parkCoordinate.latitude, longitude: parkCoordinate.longitude)
+        // calc distance in meters
+        let distanceFromLocInMeters = userLoc.distance(from: parkLocation)
+        
+        // return the disntance from the current location in miles
+        return (distanceFromLocInMeters)/(METERS_PER_MILE)
     }
     
     // create a location object with all other vars set as defaults
