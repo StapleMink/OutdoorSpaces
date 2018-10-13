@@ -130,7 +130,7 @@ class MapViewController: UIViewController{
     //location: CLLocation is the center point
     func centerMapOnLocation(location: CLLocation)
     {
-        let coordinateRegion = MKCoordinateRegionMakeWithDistance(location.coordinate, regionRadius, regionRadius)
+        let coordinateRegion = MKCoordinateRegion.init(center: location.coordinate, latitudinalMeters: regionRadius, longitudinalMeters: regionRadius)
         //tell mapView to display the region
         mapView.setRegion(coordinateRegion, animated: true)
     }
